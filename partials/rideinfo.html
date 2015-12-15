@@ -1,0 +1,22 @@
+<h4 id-"directions"> Directions: </h4>
+<ul class ="login">
+	<li><span class="login-list">Use Facebook to Login</span> </li>
+	<li><span class="login-list"> Browse our Ride List </li>
+	<li> <span class="login-list">Look for Great Savings and Freebies along the Way!</span> </li>
+</ul>
+
+<form id="search-form">
+  <h4>Search by Neighborhood or Interest</h4>
+  <input type="text" ng-model="nameOrarea">
+</form>
+
+<div ng-repeat="data in rides | filter: nameOrarea | orderBy: 'name'">
+  <h3 class="ride-title"><a href="/ride1">{{data.name}}</a></h3>
+  <div class="route">
+  	<h5 class="area">{{data.area}}</h5>
+		<span class="miles">Distance: {{data.miles}} mi /</span>
+		<span class="time">Time: {{data.time}} min / </span>
+		<span class="stops">Stops: {{data.stops}} stops</span>
+		<p class="ride-description">{{data.description}}</p>
+	</div>
+</div>

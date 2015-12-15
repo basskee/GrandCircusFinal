@@ -1,0 +1,100 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='css/styles.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,900,600,500,700,800' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script src='js/app.js'></script>
+  <script src='js/map.service.js'></script>
+  <script src='js/login.js'></script>
+  <script src='js/main.controller.js'></script>
+  <script src='js/ride1.controller.js'></script>
+  <script src='js/ride2.controller.js'></script>
+  <base href="/" />
+<title>Final Project</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Name</a></li>
+      <!-- <li><a href="#home">home</a></li>
+      <li><a href="#rides">rides</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#rides">login</a></li> -->
+      <li class="hamburger"><a>&equiv;</a>
+        <ul>
+          <a href="#home"><li>home</li></a>
+          <a href="#rides"><li>rides</li></a>
+          <a href="#about"><li>about</li></a>
+          <a href="#contact"><li>contact</li></a>
+          <a href="#rides"><li>login</li></a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+<section id="home">
+  <div class="image"> 
+    <img src= img/greenbikecrop.jpg>
+  </div>
+     <h1>KICKSTAND</h1>
+  <div>
+    <h2>See the city on your bike.</h2>
+    <h2>Discover the city with your kickstand.</h2>
+    <p>Detroit's a great city and a great place to bike. But if your rides are simply taking you from start to finish, you're missing the best part about this place -- the local businesses, attractions, and people who make Detroit the unique, friendly, and awesome place that it is.</p>
+    <h4>So get off your bike, use your kickstand, and experience your ride!</h4>
+
+    <h4>Get started</h4>
+    <ul>
+      <li>Choose a themed ride that we've pre-planned for you. Select by ride distance, time, area, or the Kickstand stops along the way.</li>
+      <li>Sign-in to Kickstand to enjoy the benefits offered by the businesses at many of our Kickstand stops.</li>
+      <li>Download the route to your portable device so you can take it with you.</li>
+      <li>Check the route for any special instructions or considerations regarding the Kickstand stops.</li>
+    </ul>
+
+    <h4>Join our community and enjoy special offers from the places along your ride where you stop and use your kickstand!</h4>
+  </div>
+</section>
+
+<section id="rides">
+    <h2>Rides</h2>
+    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
+    <div ng-controller="offercontrol">
+      <div ng-hide="offer">TEST</div>
+    </div>
+    <ng-view />
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+    <h4>Pick a Route. Ride. Enjoy.</h4>
+    <p><span>Thats how we roll at...</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <button><a href="#">CONTACT US</a></button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <p>Send us an email and we'll be in contact!</p>
+    <p>Name: <input type="text" name="firstname" required></p>
+    <p>Email: <input type="email" name="emailaddress" required></p>
+    <p>Message: <textarea cols="35" rows="4" name="comment"></textarea></p>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+</section>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_QF7-T8ABxYhowbGFf1aRKP00ouJrkM&callback=initMap"></script>
+</body>
+</html>

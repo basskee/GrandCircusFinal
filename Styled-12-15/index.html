@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Oswald|Droid+Serif" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
+  <link href='css/styles.css' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script src='js/app.js'></script>
+  <script src='js/map.service.js'></script>
+  <script src='js/login.js'></script>
+  <script src='js/main.controller.js'></script>
+  <script src='js/ride1.controller.js'></script>
+  <script src='js/ride2.controller.js'></script>
+  <base href="/" />
+
+<title>Final Project</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a class="main-title" href="/">KICKSTAND</a></li>
+      <li class="hamburger"><a>&equiv;</a>
+        <ul>
+          <a href="#home"><li>home</li></a>
+          <a href="#rides"><li>rides</li></a>
+          <a href="#about"><li>about</li></a>
+          <a href="#contact"><li>contact</li></a>
+          <a href="#rides"><li>login</li></a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+<section id="home">
+  <div class="home-image"> 
+    <img src= img/greenbikecrop.jpg>
+  </div>
+     <h1>KICKSTAND</h1>
+<!--      <div class="intro-divider">
+      <h4> USE YOUR KICKSTAND, EXPERIENCE DETROIT </h4>
+    </div> -->  
+</section>
+
+<section id="about">
+  <h2>WHAT IS KICKSTAND?</h2>
+   <p> Kickstand was made for Detroiters who take socializing and biking seriously, but don't take themselves too seriously. Browse through our pre-planned bike routes that will satisfy any craving for a snack or scene. Sign into our app using Facebook for special offers and discounts to enjoy during your ride. </p>
+</section>
+
+<section id="rides">
+    <h2>Rides</h2>
+    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
+    <div ng-controller="offercontrol">
+      <div ng-hide="offer">TEST</div>
+    </div>
+    <ng-view />
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="main-contact">
+    <h4>SEND US AN EMAIL</h4>
+    <p>Name: <input type="text" name="firstname" required></p>
+    <p>Email: <input type="email" name="emailaddress" required></p>
+    <p>Message: <textarea cols="35" rows="4" name="comment"></textarea></p>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+</section>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_QF7-T8ABxYhowbGFf1aRKP00ouJrkM&callback=initMap"></script>
+</body>
+</html>
