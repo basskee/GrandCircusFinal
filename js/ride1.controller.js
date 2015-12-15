@@ -5,16 +5,14 @@ app.controller('ride1control', function($scope, mapservice) {
   var initmap = mapservice;
   initmap();
 
-  console.log("hi");
-
   $scope.rides = [
     {
       name: "Farm to Picnic Table",
       area: "East and Riverfront",
       miles: 11.4,
       time: 64,
-      description:"Gather your picnic at stops along the way then stop at Belle Isle",
-      stops:  9,
+      description:"Build your picnic as you bike to Belle Isle",
+      stops:  5,
       waypoints: [
         {
           name: "Eastern Market Sheds",
@@ -37,30 +35,10 @@ app.controller('ride1control', function($scope, mapservice) {
           what: "Beer and Wine"
         },
         {
-          name: "Sister Pie",
-          hours: "Tues-Fri 8a-6p, Sat-Sun 9a-4p",
-          what: "Baked Goods"
-        },
-        {
-          name: "Belle Isle Aquarium",
-          hours: "Sat-Sun 10a-4p",
-          what: "Aquarium"
-        },
-        {
           name: "Anna Scripps Whitcomb Conservatory",
           hours: "Wed-Sun 10a-5p",
           what: "Conservatory and Botanical Gardens"
         },
-        {
-          name: "Atwater Brewery",
-          hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
-          what: "Craft Beer"
-        },
-        {
-          name: "Trinosophes",
-          hours: "Tues-Fri 9a-6p, Sat 9a-4p, Sun 10a-4p",
-          what: "Coffee and Treats"
-        }
       ]
     },
     {
@@ -68,13 +46,21 @@ app.controller('ride1control', function($scope, mapservice) {
       area: "Corktown and Riverfront",
       miles: 6.2,
       time: 32,
-      stops: 2,
       description: "",
-      waypoint1: "Batch Brewing Company",
-      info1: "Mon-Thur 11a-10p, Fri-Sat 11a-12a",
-      waypoint2: "Atwater Brewery",
-      info2: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p"
-    },
+      stops: 2,
+      waypoints:[
+         {
+          name: "Batch Brewing Company",
+          hours: "Mon-Thur 11a-10p, Fri-Sat 11a-12a",
+          what: "Beer"
+          },
+         {
+          name: "Atwater Brewery",
+          hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
+          what: "Beer"
+          },
+        ]
+      }, 
     {
       name: "Trails & Cocktails",
       area: "East and Downtown",
