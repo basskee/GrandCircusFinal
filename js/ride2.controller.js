@@ -9,8 +9,8 @@ app.controller('ride2control', function($scope, mapservice) {
     {
       name: "Farm to Picnic Table",
       area: "East and Riverfront",
-      miles: 11.4,
-      time: 64,
+      miles: 4.6,
+      time: 25,
       description:"Build your picnic as you bike to Belle Isle",
       stops:  5,
       waypoints: [
@@ -55,10 +55,15 @@ app.controller('ride2control', function($scope, mapservice) {
           what: "Beer"
           },
          {
-          name: "Atwater Brewery",
-          hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
-          what: "Beer"
+          name: "Rivard Plaza",
+          hours: "Seasonal",
+          what: "Carousel, gardens & fountains"
           },
+          {
+         name: "Atwater Brewery",
+         hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
+         what: "Beer"
+         },
         ]
       }, 
     {
