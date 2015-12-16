@@ -269,8 +269,6 @@ input[type=email] {
 #members-only img {
   display: inline-block;
   float: right;
-  height: 64px;
-  width: 64px;
 }
 .ridecol-top {
   border: solid #000 1px;
