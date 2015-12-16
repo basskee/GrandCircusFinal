@@ -1,22 +1,37 @@
-<h4 id-"directions"> Directions: </h4>
-<ul class ="login">
-	<li><span class="login-list">Use Facebook to Login</span> </li>
-	<li><span class="login-list"> Browse our Ride List </li>
-	<li> <span class="login-list">Look for Great Savings and Freebies along the Way!</span> </li>
-</ul>
+<div class="row" id="fb-row">
+	<div id="ride-col-left" class="col-xs-12 col-md-4">
 
-<form id="search-form">
-  <h4>Search by Neighborhood or Interest</h4>
-  <input type="text" ng-model="nameOrarea">
-</form>
+	</div>
+	<div id="ride-col-center" class="col-xs-12 col-md-4">
+		<h4 id="directions"> Directions: </h4>
+		<ul class ="login">
+			<li><span class="login-list">Use Facebook to Login</span> </li>
+			<li><span class="login-list"> Browse our Ride List </li>
+			<li> <span class="login-list">Look for Great Savings and Freebies along the Way!</span> </li>
+		</ul>
+	</div>
+	<div id="ride-col-right" class="col-xs-12 col-md-4">
+		<form id="search-form">
+		  <h4>Search by Neighborhood or Interest</h4>
+		  <input type="text" ng-model="nameOrarea">
+		</form>
+	</div>
+</div>
 
-<div ng-repeat="data in rides | filter: nameOrarea | orderBy: 'name'">
-  <h3 class="ride-title"><a href="{{data.path}}">{{data.name}}</a></h3>
-  <div class="route">
-  	<h5 class="area">{{data.area}}</h5>
-		<span class="miles">Distance: {{data.miles}} mi /</span>
-		<span class="time">Time: {{data.time}} min / </span>
-		<span class="stops">Stops: {{data.stops}}</span>
-		<p class="ride-description">{{data.description}}</p>
+<div class="row container" id="ride-list">
+	<div id="ridelist-col-left" class="col-xs-12 col-md-3">
+		<p><img src="http://placehold.it/250x350"></p>
+	</div>
+	<div id="ridelist-col" class="col-xs-12 col-md-9">
+		<div class="my-route" ng-repeat="data in rides | filter: nameOrarea | orderBy: 'name'">
+			<h3 class="ride-title"><a href="/ride2">{{data.name}}</a></h3>
+			<div class="route">
+		  	<h5 class="area">{{data.area}}</h5>
+				<p class="miles"><i class="fa fa-map-marker"></i>Distance: {{data.miles}}mi</p>
+				<p class="time"><i class="fa fa-clock-o"></i>Time: {{data.time}}min</p>
+				<p class="stops"><i class="fa fa-flag-o"></i>Stops: {{data.stops}}</p>
+				<p class="ride-description">{{data.description}}</p>
+			</div>
+		</div>
 	</div>
 </div>

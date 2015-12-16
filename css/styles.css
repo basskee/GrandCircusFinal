@@ -1,4 +1,22 @@
-* {
+html,
+body,
+a,
+p,
+section,
+div,
+nav,
+img,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span {
   margin: 0;
   padding: 0;
   -moz-box-sizing: border-box;
@@ -30,7 +48,7 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   color: #e1b596;
-  margin: 10px 0;
+  margin: 10px 0 25px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -75,12 +93,18 @@ h5 .area {
   font-size: 12px;
   color: #da594c;
 }
+.fa {
+  margin-right: 10px !important;
+}
 a.main-title {
   font-family: "Oswald", cursive;
   font-weight: 700;
   color: #e1b596;
 }
 /*====Home*=======*/
+#section {
+  padding-top: 40px;
+}
 #home {
   height: 350px;
   width: 400px;
@@ -89,7 +113,7 @@ a.main-title {
 #home div ul li {
   margin-left: 1.5em;
 }
-.image-box {
+#image-box {
   position: absolute;
   width: 100%;
   top: 40px;
@@ -102,12 +126,16 @@ a.main-title {
   top: 0;
   width: 360px;
   height: 48.4px;
+  margin: 0;
+  padding: 0;
   background-color: #00f;
 }
 .navbar ul {
   position: relative;
   display: inline-table;
-  width: 100%;
+  width: 360px;
+  margin: -1px 0 0 -1px;
+  padding: 0;
   list-style: none;
 }
 .navbar ul li {
@@ -123,7 +151,8 @@ a.main-title {
   display: none;
   position: absolute;
   top: 100%;
-  width: 85px;
+  left: 1px;
+  width: 100%;
   background: #5f6975;
 }
 .navbar ul li ul li {
@@ -153,11 +182,11 @@ a.main-title {
 }
 .navbar ul .hamburger {
   float: right;
-  font-size: 2.5em;
+  font-size: 2.4em;
   font-weight: bold;
 }
 .navbar ul .hamburger a {
-  padding: 0;
+  padding: 0 20px 1px 20px;
 }
 .navbar ul .hamburger ul li {
   font-size: 1em;
@@ -199,7 +228,6 @@ ul.login li {
   font-weight: 400;
 }
 #rides {
-  overflow: scroll;
   padding-top: 20px;
 }
 #rides h3 {
@@ -222,10 +250,6 @@ textarea {
   margin: 10px;
 }
 input[type=text],
-input[type=url],
-input[type=tel],
-input[type=number],
-input[type=color],
 input[type=email] {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -276,9 +300,9 @@ input[type=email] {
 .ride-info p {
   margin: 8px 0px;
 }
-@media only screen and (min-width: 400px) {
-  .home-image {
-    background-image: url("../img/green600.jpg");
+@media only screen and (min-width: 960px) {
+  #image-box {
+    background-image: url("../img/greenbike1200.jpg");
   }
   #about {
     width: 100%;
@@ -286,9 +310,31 @@ input[type=email] {
   #home {
     width: 100%;
   }
-}
-@media only screen and (min-width: 960px) {
-  .home-image {
-    background-image: url("../img/greenbike1200.jpg");
+  .my-route {
+    width: 250px !important;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  h5.area {
+    text-align: center;
+  }
+  p.ride-description {
+    text-align: center;
+  }
+  .miles,
+  .time,
+  .stops {
+    margin-left: 60px;
+  }
+  #fb-row {
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .navbar {
+    width: 100%;
   }
 }
