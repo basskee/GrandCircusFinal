@@ -2,7 +2,6 @@ function statusChangeCallback(response) {
   console.log('statusChangeCallback: ' + response.status);
   if (response.status === 'connected') {
     console.log("Status: " + response.status);
-    // testAPI();
     userLogged();
   } else if (response.status === 'not_authorized') {
     console.log("Status: " + response.status);
@@ -14,11 +13,11 @@ function statusChangeCallback(response) {
 };
 
 
-// function checkLoginState() {
-//   FB.getLoginStatus(function(response) {
-//     statusChangeCallback(response);
-//   });
-// }
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
 
 
 window.fbAsyncInit = function() {
@@ -44,19 +43,25 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));
 
 
-// function testAPI() {
-//   console.log('Welcome!  Fetching your information.... ');
-//   FB.api('/me', function(response) {
-//     console.log('Successful login for: ' + response.name);
-//   });
-// };
-
-
 function userLogged() {
   FB.api('/me', function(response) {
-    document.getElementById('members-only').innerText = 'Hi ' + response.name + "!";
+    var memWrap = document.getElementById("members-only"),
+        memDiv = document.getElementById('mem-content'),
+        memIcon = document.createElement("img"),
+        memText = document.createElement("p");
+
+    memWrap.style.display="inline-block";
+    memIcon.setAttribute("src", "img/memicon64.png");
+
+    memText.innerText = "Keep an eye out for this icon to find deals from local businesses.";
+    memDiv.innerText = "Hi, " + response.first_name + "!";
+
+    memDiv.appendChild(memIcon);
+    memDiv.appendChild(memText);
   });
 };
+
 function userNotLogged() {
-  document.getElementById('members-only').innerText = 'Please log into Kickstand with Facebook.';
+  var memWrap = document.getElementById("members-only");
+  memWrap.style.display="none";
 };

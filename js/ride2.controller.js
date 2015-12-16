@@ -55,11 +55,11 @@ app.controller('ride2control', function($scope, mapservicetwo) {
          what: "Beer"
          },
          {
-         name: "Rivard Plaza",
-         hours: "Seasonal",
-         what: "Carousel,gardens & fountains"
-         },
-        {
+          name: "Rivard Plaza",
+          hours: "Seasonal",
+          what: "Carousel, gardens & fountains"
+          },
+          {
          name: "Atwater Brewery",
          hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
          what: "Beer"

@@ -40,7 +40,7 @@ app.controller('maincontroller', function($scope) {
      ]
    },
    {
-     path:"/ride2",
+     path: "/ride2",
      name: "Beers & Gears",
      area: "Corktown and Riverfront",
      miles: 6.2,

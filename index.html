@@ -58,13 +58,16 @@
         </p>
     </div>
   </section>
-  
+
   <section id="rides" class="container">
-      <h2>Rides</h2>
-      <div class="fb-login-button" data-scope="public_profile, email, user_friends" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
-      <div id="members-only"></div>
-      <ng-view></ng-view>
-      <div class="fb-comments" data-href="http://aarondesanto.github.io/" data-width="320" data-numposts="5"></div>
+    <h2>Rides</h2>
+    <div class="fb-login-button" data-scope="public_profile, email, user_friends" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
+    <div id="members-only">
+      <div id="mem-content">
+      </div>
+    </div>
+    <ng-view></ng-view>
+    <div class="fb-comments" data-href="http://aarondesanto.github.io/" data-width="320" data-numposts="5"></div>
   </section>
 
   <section id="contact">
