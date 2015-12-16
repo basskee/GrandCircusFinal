@@ -30,7 +30,7 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   color: #e1b596;
-  margin: 10px 0;
+  margin: 10px 0 25px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ h5 .area {
   color: #da594c;
 }
 .fa {
-  margin-right: 5px !important;
+  margin-right: 10px !important;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -84,6 +84,9 @@ a.main-title {
   color: #e1b596;
 }
 /*====Home*=======*/
+#section {
+  padding-top: 40px;
+}
 #home {
   height: 350px;
   width: 400px;
@@ -92,7 +95,7 @@ a.main-title {
 #home div ul li {
   margin-left: 1.5em;
 }
-.image-box {
+#image-box {
   position: absolute;
   width: 100%;
   top: 40px;
@@ -202,7 +205,6 @@ ul.login li {
   font-weight: 400;
 }
 #rides {
-  overflow: scroll;
   padding-top: 20px;
 }
 #rides h3 {
@@ -253,7 +255,7 @@ input[type=email] {
   margin: 8px 0px;
 }
 @media only screen and (min-width: 960px) {
-  .home-image {
+  #image-box {
     background-image: url("../img/greenbike1200.jpg");
   }
   #about {
@@ -266,11 +268,27 @@ input[type=email] {
     width: 250px !important;
     margin: 5px;
     padding: 5px;
+    display: inline-block;
+    vertical-align: top;
   }
   h5.area {
     text-align: center;
   }
   p.ride-description {
     text-align: center;
+  }
+  .miles,
+  .time,
+  .stops {
+    margin-left: 60px;
+  }
+  #fb-row {
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .navbar {
+    width: 100%;
   }
 }
