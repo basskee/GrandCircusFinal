@@ -1,4 +1,22 @@
-* {
+html,
+body,
+a,
+p,
+section,
+div,
+nav,
+img,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span {
   margin: 0;
   padding: 0;
   -moz-box-sizing: border-box;
@@ -108,12 +126,16 @@ a.main-title {
   top: 0;
   width: 360px;
   height: 48.4px;
+  margin: 0;
+  padding: 0;
   background-color: #00f;
 }
 .navbar ul {
   position: relative;
   display: inline-table;
-  width: 100%;
+  width: 360px;
+  margin: -1px 0 0 -1px;
+  padding: 0;
   list-style: none;
 }
 .navbar ul li {
@@ -129,7 +151,8 @@ a.main-title {
   display: none;
   position: absolute;
   top: 100%;
-  width: 85px;
+  left: 1px;
+  width: 100%;
   background: #5f6975;
 }
 .navbar ul li ul li {
@@ -159,11 +182,11 @@ a.main-title {
 }
 .navbar ul .hamburger {
   float: right;
-  font-size: 2.5em;
+  font-size: 2.4em;
   font-weight: bold;
 }
 .navbar ul .hamburger a {
-  padding: 0;
+  padding: 0 20px 1px 20px;
 }
 .navbar ul .hamburger ul li {
   font-size: 1em;
