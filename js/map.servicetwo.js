@@ -1,21 +1,13 @@
 var app = angular.module('myApp');
 
-app.factory('mapservice', function() {
+app.factory('mapservicetwo', function() {
   function initMap() {
-      var pointA = new google.maps.LatLng(42.347702, -83.041534), // Eastern Market 
-        pointB = new google.maps.LatLng(42.336221, -82.98573), // Belle Isle
+    var pointA = new google.maps.LatLng(42.328390, -83.063161), // Batch 
+        pointB = new google.maps.LatLng(42.337430, -83.018362), // Atwater
         waypts = [
                     {
-                      location: new google.maps.LatLng(42.346173, -83.040392),
-                      stopover: true // Germack
-                    },
-                    {
-                      location: new google.maps.LatLng(42.345934, -83.038841),
-                      stopover: true // Wine Place
-                    },
-                    {
-                      location: new google.maps.LatLng(42.346042, -83.038934),
-                      stopover: true // DeVries
+                      location: new google.maps.LatLng(42.330212, -83.031627),
+                      stopover: true // Rivard Plaza
                     },
                 ],
         myOptions = {
