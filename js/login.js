@@ -54,7 +54,7 @@ function userLogged() {
     memIcon.setAttribute("src", "img/memicon64.png");
 
     memText.innerText = "Keep an eye out for this icon to find deals from local businesses.";
-    memDiv.innerText = "Hi, " + response.name + "!";
+    memDiv.innerText = "Hi, " + response.first_name + "!";
 
     memDiv.appendChild(memIcon);
     memDiv.appendChild(memText);
