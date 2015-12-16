@@ -1,0 +1,7 @@
+  function initMap() {
+    var pointA = new google.maps.LatLng(42.328390, -83.063161), // Batch
+        pointB = new google.maps.LatLng(42.337430, -83.018362), // Atwater
+        myOptions = {
+          zoom: 7,
+          center: pointA
+        },
