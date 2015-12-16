@@ -80,6 +80,22 @@ a.main-title {
   font-weight: 700;
   color: #e1b596;
 }
+/*====Home*=======*/
+#home {
+  height: 350px;
+  width: 400px;
+  position: relative;
+}
+#home div ul li {
+  margin-left: 1.5em;
+}
+.image-box {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  padding-top: 10px;
+  background-image: url("../img/greenbikecrop.jpg");
+}
 .navbar {
   z-index: 1;
   position: fixed;
@@ -182,6 +198,7 @@ ul.login li {
 #rides h3 {
   text-align: center;
 }
+/*======FACEBOOK=======*/
 #u_0_0,
 .pluginLoginButton pluginLoginButtonXlarge {
   position: relative important;
@@ -207,32 +224,12 @@ textarea {
   background-color: #f6f6f6;
   margin: 10px;
 }
-input[type=text],
-input[type=url],
-input[type=tel],
-input[type=number],
-input[type=color],
-input[type=email] {
+input[type=text] {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 #contact p {
   font-size: 16px;
-}
-#home {
-  height: 350px;
-  width: 400px;
-  position: relative;
-}
-#home div ul li {
-  margin-left: 1.5em;
-}
-.home-image {
-  position: absolute;
-  width: 100%;
-  top: 40px;
-  padding-top: 10px;
-  background-image: url("../img/greenbikecrop.jpg");
 }
 .ridecol-top {
   border: solid #000 1px;
@@ -241,18 +238,15 @@ input[type=email] {
   margin: 8px 0px;
 }
 @media only screen and (min-width: 400px) {
-.home-image {
-    background-image: url("../img/greenbikecrop.jpg");
+  .home-image {
+    background-image: url("../img/green600.jpg");
   }
   #about {
     width: 100%;
   }
   #home {
     width: 100%;
-  }  
-}
-@media only screen and (min-width: 600px) {
-  
+  }
 }
 @media only screen and (min-width: 960px) {
   .home-image {
