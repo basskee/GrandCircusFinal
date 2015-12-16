@@ -184,7 +184,7 @@ ul.login li{
   font-weight:400;
 }
 #rides{
-  overflow: scroll;
+  // overflow: scroll;
   padding-top 20px;
 }
 #rides h3{
@@ -221,12 +221,7 @@ background-color: #f6f6f6;
 margin: 10px;
 }
 
-input[type=text],
-input[type=url],
-input[type=tel],
-input[type=number],
-input[type=color],
-input[type=email],{
+input[type=text]{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -250,11 +245,13 @@ input[type=email],{
         margin-left 1.5em
 
   
-.home-image
+.home-image{
   position: absolute;
   width: 100%;
   top: 40px;
-  padding-top:10px
+  padding-top:10px;
+  background-image: url("../img/greenbikecrop.jpg");
+  }
 
 
 //About CSS
@@ -267,3 +264,34 @@ input[type=email],{
 .ride-info p{
 margin: 8px 0px;
 }
+
+
+
+
+//*====MEDIA QUERies=====*//
+
+@media only screen and (min-width: 400px) {
+  .home-image {
+    background-image: url("../img/greenbikecrop.jpg");
+  }
+  #about {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+  }  
+}
+  
+
+@media only screen and (min-width: 600px) {
+  background-image: url("../img/green600.jpg");
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .home-image{
+  background-image: url("../img/greenbike1200.jpg");
+  }
+}
+ 
+

@@ -177,7 +177,6 @@ ul.login li {
   font-weight: 400;
 }
 #rides {
-  overflow: scroll;
   padding-top: 20px;
 }
 #rides h3 {
@@ -233,10 +232,30 @@ input[type=email] {
   width: 100%;
   top: 40px;
   padding-top: 10px;
+  background-image: url("../img/greenbikecrop.jpg");
 }
 .ridecol-top {
   border: solid #000 1px;
 }
 .ride-info p {
   margin: 8px 0px;
+}
+@media only screen and (min-width: 400px) {
+.home-image {
+    background-image: url("../img/greenbikecrop.jpg");
+  }
+  #about {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+  }  
+}
+@media only screen and (min-width: 600px) {
+  
+}
+@media only screen and (min-width: 960px) {
+  .home-image {
+    background-image: url("../img/greenbike1200.jpg");
+  }
 }
