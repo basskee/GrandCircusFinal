@@ -56,6 +56,9 @@ h5 {
   color: #000;
   font-style: italic;
 }
+h5 .area {
+  text-align: center;
+}
 .miles,
 .time,
 .stops {
@@ -66,14 +69,14 @@ h5 {
   text-transform: uppercase;
   margin-left: 25px;
 }
-h5.area {
-  text-align: center;
-}
 .login-list {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #da594c;
+}
+.fa {
+  margin-right: 5px !important;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -100,7 +103,7 @@ a.main-title {
   z-index: 1;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 360px;
   height: 48.4px;
   background-color: #00f;
 }
@@ -109,25 +112,6 @@ a.main-title {
   display: inline-table;
   width: 100%;
   list-style: none;
-}
-.navbar ul ul {
-  display: none;
-  background: #5f6975;
-  position: absolute;
-  top: 100%;
-}
-.navbar ul ul li {
-  float: none;
-  position: relative;
-}
-.navbar ul ul li a,
-.navbar ul ul li a:hover {
-  background: #4b545f;
-}
-.navbar ul ul ul {
-  position: absolute;
-  left: 100%;
-  top: 0;
 }
 .navbar ul li {
   float: left;
@@ -139,11 +123,27 @@ a.main-title {
   text-decoration: none;
 }
 .navbar ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
   width: 85px;
+  background: #5f6975;
+}
+.navbar ul li ul li {
+  float: none;
+  position: relative;
 }
 .navbar ul li ul a {
   text-align: center;
   padding: 5px 10px;
+}
+.navbar ul li ul a:hover {
+  background: #4b545f;
+}
+.navbar ul li ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
 .navbar ul li:hover {
   background-color: #4b545f;
@@ -156,6 +156,15 @@ a.main-title {
 }
 .navbar ul .hamburger {
   float: right;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.navbar ul .hamburger a {
+  padding: 0;
+}
+.navbar ul .hamburger ul li {
+  font-size: 1em;
+  font-weight: normal;
 }
 .navbar ul:after {
   content: "";
@@ -193,20 +202,11 @@ ul.login li {
   font-weight: 400;
 }
 #rides {
+  overflow: scroll;
   padding-top: 20px;
 }
 #rides h3 {
   text-align: center;
-}
-/*======FACEBOOK=======*/
-#u_0_0,
-.pluginLoginButton pluginLoginButtonXlarge {
-  position: relative important;
-  left: 15em important;
-}
-#u_0_0 > div:nth-child(1) {
-  position: relative !important;
-  left: 15em !important;
 }
 #search-form {
   text-align: center;
@@ -224,12 +224,27 @@ textarea {
   background-color: #f6f6f6;
   margin: 10px;
 }
-input[type=text] {
+input[type=text],
+input[type=email] {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 #contact p {
   font-size: 16px;
+}
+#home {
+  height: 350px;
+  width: 400px;
+  position: relative;
+}
+#home div ul li {
+  margin-left: 1.5em;
+}
+.home-image {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  padding-top: 10px;
 }
 .ridecol-top {
   border: solid #000 1px;
@@ -237,9 +252,9 @@ input[type=text] {
 .ride-info p {
   margin: 8px 0px;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 960px) {
   .home-image {
-    background-image: url("../img/green600.jpg");
+    background-image: url("../img/greenbike1200.jpg");
   }
   #about {
     width: 100%;
@@ -247,9 +262,15 @@ input[type=text] {
   #home {
     width: 100%;
   }
-}
-@media only screen and (min-width: 960px) {
-  .home-image {
-    background-image: url("../img/greenbike1200.jpg");
+  .my-route {
+    width: 250px !important;
+    margin: 5px;
+    padding: 5px;
+  }
+  h5.area {
+    text-align: center;
+  }
+  p.ride-description {
+    text-align: center;
   }
 }
