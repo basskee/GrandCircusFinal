@@ -303,6 +303,8 @@ input[type=email] {
 @media only screen and (min-width: 960px) {
   #image-box {
     background-image: url("../img/greenbike1200.jpg");
+    background-repeat: no-repeat;
+    height:100%;
   }
   #about {
     width: 100%;
