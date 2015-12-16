@@ -45,11 +45,23 @@ window.fbAsyncInit = function() {
 
 function userLogged() {
   FB.api('/me', function(response) {
-    var memText = document.createTextNode("Keep an eye out for the (icon) icon to find deals from local businesses.");
-    document.getElementById('members-only').innerText = 'Hi ' + response.name + "!";
-    document.getElementById('members-only').appendChild(memText);
+    var memWrap = document.getElementById("members-only"),
+        memDiv = document.getElementById('mem-content'),
+        memIcon = document.createElement("img"),
+        memText = document.createElement("p");
+
+    memWrap.style.display="inline-block";
+    memIcon.setAttribute("src", "img/memicon.png");
+
+    memText.innerText = "Keep an eye out for this icon to find deals from local businesses.";
+    memDiv.innerText = "Hi, " + response.name + "!";
+
+    memDiv.appendChild(memIcon);
+    memDiv.appendChild(memText);
   });
 };
+
 function userNotLogged() {
-  document.getElementById('members-only').innerText = 'Please log into Kickstand with Facebook.';
+  var memWrap = document.getElementById("members-only");
+  memWrap.style.display="none";
 };

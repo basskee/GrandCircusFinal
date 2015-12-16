@@ -248,7 +248,7 @@ input[type=email] {
   padding-top: 10px;
 }
 #members-only {
-  display: inline-block;
+  display: none;
   height: 110px;
   width: 200px;
   border-radius: 15px;
