@@ -40,66 +40,69 @@
       </li>
     </ul>
   </nav>
-<section id="home">
-  <div id="image-box "class="container-fluid"> 
-<!--     <div class="col-xs-12 col-sm-12 col-md-12"> -->
-        <h1>KICKSTAND</h1>
-    </div>
-  </div>
-<section id="about" class="container">
-  <div class="about-left"> 
-    <div class="col-xs-12 col-md-6">
-      <h2>WHAT IS KICKSTAND?</h2>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 about-right">
-      <p> Kickstand was made for Detroiters who take socializing and biking seriously, but don't take themselves too seriously. Browse through our pre-planned bike routes that will satisfy any craving for a snack or scene. Sign into our app using Facebook for special offers and discounts to enjoy during your ride. 
-      </p>
-    </div>
-  </div>
 
-
-<section id="rides">
-    <h2>Rides</h2>
-    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
-    <div ng-controller="offercontrol">
-      <div ng-hide="offer">TEST</div>
+  <section id="home">
+    <div id="image-box" class="container-fluid">
+  <!--     <div class="col-xs-12 col-sm-12 col-md-12"> -->
+          <h1>KICKSTAND</h1>
+      </div>
     </div>
-    <ng-view />
-</section>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <form id="main-contact">
-    <h4>SEND US AN EMAIL</h4>
-    <p>Name: <input type="text" name="firstname" required></p>
-    <p>Email: <input type="email" name="emailaddress" required></p>
-    <p>Message: <textarea cols="35" rows="4" name="comment"></textarea></p>
-    <input type="submit" value="Submit">
-    <input type="reset">
-  </form>
-</section>
+  <section id="about" class="container">
+    <div class="about-left">
+      <div class="col-xs-12 col-md-6">
+        <h2>WHAT IS KICKSTAND?</h2>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 about-right">
+        <p> Kickstand was made for Detroiters who take socializing and biking seriously, but don't take themselves too seriously. Browse through our pre-planned bike routes that will satisfy any craving for a snack or scene. Sign into our app using Facebook for special offers and discounts to enjoy during your ride.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-        <div class="container">
-          <span class="copyright">Copyright &copy; Kickstand 2015</span>
-          <div class="social-buttons">
-            <ul>
-              <li><a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-            </ul>
-          </div>
-          </div class="extrainfo">
-            <ul>
-              <li><a href="#">Privacy Policy</a>
-              </li>
-              <li><a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-</footer>
+  <section id="rides">
+      <h2>Rides</h2>
+      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
+      <div ng-controller="offercontrol">
+        <div ng-hide="offer">TEST</div>
+      </div>
+      <ng-view />
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="main-contact">
+      <h4>SEND US AN EMAIL</h4>
+      <p>Name: <input type="text" name="firstname" required></p>
+      <p>Email: <input type="email" name="emailaddress" required></p>
+      <p>Message: <textarea cols="35" rows="4" name="comment"></textarea></p>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span class="copyright">Copyright &copy; Kickstand 2015</span>
+      <div class="social-buttons">
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+      </div class="extrainfo">
+        <ul>
+          <li><a href="#">Privacy Policy</a>
+          </li>
+          <li><a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_QF7-T8ABxYhowbGFf1aRKP00ouJrkM&callback=initMap"></script>
 </body>
