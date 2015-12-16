@@ -2,7 +2,6 @@ function statusChangeCallback(response) {
   console.log('statusChangeCallback: ' + response.status);
   if (response.status === 'connected') {
     console.log("Status: " + response.status);
-    // testAPI();
     userLogged();
   } else if (response.status === 'not_authorized') {
     console.log("Status: " + response.status);
@@ -14,11 +13,11 @@ function statusChangeCallback(response) {
 };
 
 
-// function checkLoginState() {
-//   FB.getLoginStatus(function(response) {
-//     statusChangeCallback(response);
-//   });
-// }
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
 
 
 window.fbAsyncInit = function() {
@@ -44,17 +43,11 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));
 
 
-// function testAPI() {
-//   console.log('Welcome!  Fetching your information.... ');
-//   FB.api('/me', function(response) {
-//     console.log('Successful login for: ' + response.name);
-//   });
-// };
-
-
 function userLogged() {
   FB.api('/me', function(response) {
+    var memText = document.createTextNode("Keep an eye out for the (icon) icon to find deals from local businesses.");
     document.getElementById('members-only').innerText = 'Hi ' + response.name + "!";
+    document.getElementById('members-only').appendChild(memText);
   });
 };
 function userNotLogged() {

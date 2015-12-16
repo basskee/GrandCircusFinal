@@ -247,6 +247,31 @@ input[type=email] {
   top: 40px;
   padding-top: 10px;
 }
+#members-only {
+  display: inline-block;
+  height: 110px;
+  width: 200px;
+  border-radius: 15px;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e9cf92;
+  background-color: #4f2512;
+}
+#members-only p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e9cf92;
+}
+#members-only img {
+  display: inline-block;
+  float: right;
+  height: 64px;
+  width: 64px;
+}
 .ridecol-top {
   border: solid #000 1px;
 }
