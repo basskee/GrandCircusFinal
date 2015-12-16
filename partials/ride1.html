@@ -1,14 +1,13 @@
 <div class="ridecol-top">
 	<h2>{{rides[0].name}}</h2>
 	<div>
-		<!-- <p>Area: "East and Riverfront"</p> -->
 		<span>{{rides[0].miles}} mi</span>
 		<span>{{rides[0].time}} min</span>
 		<span>{{rides[0].stops}} stops</span>
 	</div>
 	<div id="map"></div>
 	<h4>description</h4>
-	<p class="ride-info">Gather your picnic at stops along the way then stop at Belle Isle.</p>
+	<p class="ride-info">Build your picnic as you bike to Belle Isle.</p>
 	<div ng-repeat="stop in rides[0].waypoints">
 		<p class="ride-info">{{stop.name}}</p>
 		<p class="ride-info">{{stop.hours}}</p>

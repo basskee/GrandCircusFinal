@@ -4,6 +4,7 @@ app.controller('maincontroller', function($scope) {
 
  $scope.rides = [
    {
+     path: "/ride1",
      name: "Farm to Picnic Table",
      area: "East and Riverfront",
      miles: 4.6,
@@ -39,6 +40,7 @@ app.controller('maincontroller', function($scope) {
      ]
    },
    {
+     path:"/ride2",
      name: "Beers & Gears",
      area: "Corktown and Riverfront",
      miles: 6.2,
