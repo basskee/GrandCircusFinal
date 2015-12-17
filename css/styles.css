@@ -219,13 +219,8 @@ footer .copyright {
 /*=====End Home=====*/
 /*=====Start About=====*/
 #about {
-<<<<<<< HEAD
   width: 330px;
   margin-left: 14px;
-=======
-  max-width: 320px;
-  margin: 0 0 0 5px;
->>>>>>> 184e9f5714ecf7d4dcecd79bc105c2f9c037c8a2
   padding-top: 60px;
   text-align: center;
 }
