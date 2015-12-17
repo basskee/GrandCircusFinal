@@ -48,7 +48,7 @@ app.controller('ride1control', function($scope, mapservice) {
      miles: 6.2,
      time: 32,
      description: "Bike along the river between two great Detroit brewers",
-     stops: 2,
+     stops: 3,
      waypoints:[
         {
          name: "Batch Brewing Company",
