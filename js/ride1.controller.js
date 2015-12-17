@@ -15,6 +15,7 @@ app.controller('ride1control', function($scope, mapservice) {
      stops:  5,
      waypoints: [
        {
+         flag: "../image/mapA.jpg"
          name: "Eastern Market Sheds",
          hours: "Sat 7a-4p, Sun 10a-4p, Tues 9a-3p (June-Oct)",
          what: "Fresh Produce"

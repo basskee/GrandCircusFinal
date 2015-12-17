@@ -340,8 +340,7 @@ input[type=email] {
 }
 .ride-descrip {
   margin: 8px 0px;
-}
-text-align center {
+  text-align: center;
   color: #a52a2a;
   font-size: 20px;
   font-style: italic;
