@@ -102,7 +102,6 @@ h5 .area {
 #directions {
   font-size: 28px;
   margin-top: 25px;
-  font-weight: 500;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -313,19 +312,6 @@ input[type=email] {
 }
 #home div ul li {
   margin-left: 1.5em;
-}
-.home-image {
-  position: absolute;
-  width: 100%;
-  top: 40px;
-  padding-top: 10px;
-}
-.btn {
-  background-color: #e1b596;
-  color: #fff;
-}
-.btn:hover {
-  background-color: #fff;
 }
 #members-only {
   display: none;
