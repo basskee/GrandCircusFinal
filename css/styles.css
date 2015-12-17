@@ -230,10 +230,10 @@ footer {
   background-color: #75ad4c;
   color: #fff;
 }
-footer .footcontain {
+footer .container {
   display: inline-block;
   font-size: 14px;
-  margin: 0 auto;
+  text-align: center;
   color: #fff;
 }
 .my-route {
@@ -280,14 +280,14 @@ h5.ride-description {
   text-align: center;
   font-style: normal;
 }
+#main-contact,
 #contact input,
-textarea {
-  margin: 0 0px 10px 10px;
-  padding: 5px;
-  font-family: 'Lato', sans-serif;
-}
-input,
-textarea {
+textarea,
+margin: 0 0px 10px 10px,
+padding: 5px,
+font-family 'Lato',
+sans-serif,
+input {
   background-color: #f6f6f6;
   margin: 10px;
   border: 3px double #659d44;
@@ -338,11 +338,46 @@ input[type=email] {
   display: inline-block;
   float: right;
 }
-.ridecol-top {
-  border: solid #000 1px;
-}
-.ride-info p {
+.ridecol-top,
+.ride-descrip {
   margin: 8px 0px;
+  text-align: center;
+  color: #a52a2a;
+  font-size: 20px;
+  font-style: italic;
+}
+.ride-specifics {
+  display: inline-block;
+  padding: 25px;
+}
+.ride-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #838383;
+  font-weight: 500;
+}
+.ride-info-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #838383;
+  font-weight: 700;
+/*  padding: 25px; 
+  display: inline-block;*/
+  font-weight: bold;
+}
+.map-title {
+  font-size: 25px;
+  color: #a52a2a;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+.map-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #a52a2a;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
 }
 @media only screen and (min-width: 960px) {
   #image-box {
