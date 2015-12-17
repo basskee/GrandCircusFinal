@@ -6,9 +6,9 @@
 		<span><i class="fa fa-flag-o"></i>{{rides[0].stops}}stops</span>
 	</div>
 	<div id="map"></div>
-	<!-- <h4>description</h4> -->
 	<p class="ride-descrip">Build your picnic as you bike to Belle Isle</p>
 	<div class="ride-specifics" ng-repeat="stop in rides[0].waypoints">
+		<!-- <p class="ride-info-flag">{{stop.flag}}</p> -->
 		<p class="ride-info-name">{{stop.name}}</p>
 		<p class="ride-info">{{stop.hours}}</p>
 		<p class="ride-info">{{stop.what}}</p>
