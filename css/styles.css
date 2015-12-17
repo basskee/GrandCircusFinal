@@ -230,12 +230,11 @@ footer {
   background-color: #75ad4c;
   color: #fff;
 }
-.container{
+footer .container {
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  padding: 10px;
-  margin: 5px;
+  color: #fff;
 }
 .my-route {
   width: 250px !important;
@@ -281,15 +280,12 @@ h5.ride-description {
   text-align: center;
   font-style: normal;
 }
-#main-contact {
-  text-align: center;
-}
+#main-contact,
 #contact input,
 textarea {
   margin: 0 0px 10px 10px;
   padding: 5px;
   font-family: 'Lato', sans-serif;
-  text-align: center;
 }
 input,
 textarea {
@@ -364,6 +360,13 @@ input[type=email] {
     width: 100%;
     text-align: center;
     height: 450px;
+  }
+  .my-route {
+    width: 250px !important;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
   }
   h5.area {
     text-align: center;
