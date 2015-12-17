@@ -43,7 +43,7 @@ h1 {
   position: absolute;
   top: 100px;
   color: #fff;
-  left: 200px;
+  left: 150px;
   font-size: 70px;
 }
 h2 {
@@ -102,6 +102,7 @@ h5 .area {
 #directions {
   font-size: 28px;
   margin-top: 25px;
+  font-weight: 500px;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -116,7 +117,7 @@ h3#brand-message {
   font-style: italic;
   position: absolute;
   top: 170px;
-  left: 250px;
+  left: 220px;
 }
 /*====Home*=======*/
 #section {
@@ -126,6 +127,7 @@ h3#brand-message {
   height: 350px;
   width: 400px;
   position: relative;
+  padding: 0;
 }
 #home div ul li {
   margin-left: 1.5em;
@@ -380,7 +382,7 @@ text-align center {
 }
 @media only screen and (min-width: 960px) {
   #image-box {
-    background: url("../img/greenbike1200.jpg") center center no-repeat;
+    background: url("../img/pic2.0.jpg") center center no-repeat;
     height: 100%;
     background-position-y: 85%;
   }
