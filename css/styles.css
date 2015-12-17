@@ -304,12 +304,14 @@ input[type=email] {
   #image-box {
     background-image: url("../img/greenbike1200.jpg");
     height: 100%;
+    background-repeat: no-repeat;
   }
   #about {
     width: 100%;
   }
   #home {
     width: 100%;
+    text-align: center;
   }
   .my-route {
     width: 250px !important;
