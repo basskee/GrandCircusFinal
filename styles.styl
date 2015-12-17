@@ -32,7 +32,7 @@ h1
 h2
   font-family 'Oswald', sans-serif
   font-weight 700
-  font-size 20px
+  font-size 36px
   color #E1B596
   margin 10px 0 25px 0;
   text-align center
@@ -77,11 +77,12 @@ h5
   color #a52a2a;
 
 .fa
-  margin-right: 10px !important;
+  margin-right 10px !important
 
 #directions
-  font-size 24px
+  font-size 28px
   margin-top 25px
+  font-weight 500
 //*=====End Font======*//
 
 
@@ -207,9 +208,9 @@ footer
   .container
     display inline-block
     font-size 14px
-    // padding 5px
     text-align center
     color white
+    padding 10px
 
 //*=====RIDE PAGE START =====*/
 
@@ -262,7 +263,10 @@ h5.ride-description
   margin 0 0px 10px 10px
   padding 5px
   font-family 'Lato', sans-serif
-
+#contact h4
+  text-align center
+#contact p
+  text-align center
 input, textarea
   background-color #F6f6f6
   margin 10px
@@ -274,10 +278,6 @@ input[type=email]
   font-family 'Lato', sans-serif
   font-weight 400
 
-#contact
-  p
-    font-size: 16px
-
 //*=====CONTACT END =====*/
 //*======Home page CSS======*//
 #home
@@ -288,13 +288,6 @@ input[type=email]
     ul
       li
         margin-left 1.5em
-
-.home-image
-  position absolute
-  width 100%
-  top 40px
-  padding-top 10px
-
 
 // Members Only Pop-up
 #members-only
@@ -359,21 +352,19 @@ input[type=email]
   text-align center
   margin 10px
 
-
 //*====MEDIA QUERIES=====*//
 @media only screen and (min-width: 960px)
   #image-box
-    background-image url("../img/greenbike1200.jpg")
+    background url("../img/greenbike1200.jpg") center center no-repeat
     height 100%
-    background-repeat no-repeat
-    background-position-x 50%
+    // background-position-x 50%
     background-position-y 85%
   #about
     width 100%
   #home
     width 100%
     text-align center
-    height 450px
+    height 500px
   .my-route
     width 250px !important
     margin 5px
