@@ -7,8 +7,8 @@ header, footer, h1, h2, h3, h4, h5, h6, ul, li, span
   // font-family arial
 
 @font-face
-	font-family 'GrandHotel'
-	src url('../fonts/GrandHotel-Regular.otf')
+  font-family 'GrandHotel'
+  src url('../fonts/GrandHotel-Regular.otf')
 
 html, body
   height 100%
@@ -199,10 +199,10 @@ h3#brand-message{
 
 //*====== ABOUT START====*//
 #about{
-max-height:250px;
-width: 360px;
-padding-top: 60px;
-text-align: center;
+  max-height:250px;
+  width: 360px;
+  padding-top: 60px;
+  text-align: center;
 }
 #about p{
   text-align:justify;
@@ -213,12 +213,12 @@ text-align: center;
 footer
   background-color #75ad4c
   color #FFF
-  .container
+  .footcontain
     display inline-block
     font-size 14px
-    // padding 5px
-    text-align center
+    margin 0 auto
     color white
+    // .footcontain span:(nth-child)
 
 //*=====RIDE PAGE START =====*/
 
@@ -235,9 +235,8 @@ ul#directions{
 }
 
 #map
-  height 200px
+  height 250px
   width 100%
-
 
 h3.ride-title a{
   text-decoration: none;
@@ -267,25 +266,24 @@ ul.login li{
   text-align: center;
 }
 h5.ride-description{
-    text-align:center;
-    font-style:normal;
-  }
+  text-align:center;
+  font-style:normal;
+}
 
 //*=====RIDE PAGE END =====*/
 //*=====CONTACT =====*/
-#main-contact
       
-#contact input, textarea{
-margin: 0 0px 10px 10px;
-padding: 5px;
-font-family 'Lato', sans-serif
+#contact input, textarea
+  margin: 0 0px 10px 10px;
+  padding: 5px;
+  font-family 'Lato', sans-serif
 
-input, textarea{
-background-color: #F6f6f6
-margin: 10px
-border 3px double #659D44
-border-radius 3px
-}
+input, textarea
+  background-color #F6f6f6
+  margin 10px
+  border 3px double #659D44
+  border-radius 3px
+
 
 input[type=text],
 input[type=email],{
@@ -295,7 +293,7 @@ input[type=email],{
 }
 
 #contact p
-    font-size: 16px;
+  font-size: 16px;
 
 //*=====CONTACT END =====*/
 //*======Home page CSS======*//
@@ -346,18 +344,18 @@ input[type=email],{
   border solid black 1px
 
 .ride-info p{
-margin: 8px 0px;
+  margin: 8px 0px;
 }
 
 //*====MEDIA QUERIES=====*//
 
-@media only screen and (min-width: 960px)
+@media only screen and (min-width: 960px){
   #image-box{
-  background-image: url("../img/greenbike1200.jpg");
-  height: 100%;
-  background-repeat:no-repeat;
-  background-position-x: 50%;
-  background-position-y: 85%;
+    background-image: url("../img/greenbike1200.jpg");
+    height: 100%;
+    background-repeat:no-repeat;
+    background-position-x: 50%;
+    background-position-y: 85%;
   }
   #about {
     width: 100%;
@@ -384,7 +382,6 @@ margin: 8px 0px;
   h5.area{
     text-align:center;
   }
-  
   .miles, .time, .stops{
     margin-left: 60px;
   }
@@ -394,26 +391,34 @@ margin: 8px 0px;
   h2{
     font-size: 3em;
   }
-
-  .navbar
-    height 48.4px
-    .big-nav
-      display inline-block
-      a
-        height 50.4px
-        font-family "Oswald"
-        font-size 1.75em
-        line-height 1.25em
-    .big-nav:nth-child(2n)
-      a
-        font-style italic
-    .big-nav:nth-child(3n)
-      float right
-    .big-nav:nth-child(4n)
-      float right
-      a
-        font-style normal
-    .big-nav:nth-child(5n)
-      float right
-    .hamburger
-      display none
+  .navbar {
+    height: 48.4px;
+  }
+  .navbar .big-nav {
+    display: inline-block;
+  }
+  .navbar .big-nav a {
+    height: 50.4px;
+    font-family: "Oswald";
+    font-size: 1.75em;
+    line-height: 1.25em;
+  }
+  .navbar .big-nav:nth-child(2n) a {
+    font-style: italic;
+  }
+  .navbar .big-nav:nth-child(3n) {
+    float: right;
+  }
+  .navbar .big-nav:nth-child(4n) {
+    float: right;
+  }
+  .navbar .big-nav:nth-child(4n) a {
+    font-style: normal;
+  }
+  .navbar .big-nav:nth-child(5n) {
+    float: right;
+  }
+  .navbar .hamburger {
+    display: none;
+  }
+}
