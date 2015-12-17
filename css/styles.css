@@ -43,7 +43,6 @@ h1 {
   position: absolute;
   top: 100px;
   color: #fff;
-  left: 200px;
   font-size: 70px;
 }
 h2 {
@@ -117,25 +116,20 @@ h3#brand-message {
   font-style: italic;
   position: absolute;
   top: 170px;
-  left: 250px;
 }
 /*====Home*=======*/
-#section {
+section {
   padding-top: 40px;
 }
 #home {
   height: 350px;
-  width: 400px;
   position: relative;
-}
-#home div ul li {
-  margin-left: 1.5em;
 }
 #image-box {
   position: absolute;
-  width: 100%;
+  width: 320px;
   top: 40px;
-  padding-top: 10px;
+  height: 320px;
   background-image: url("../img/greenbikecrop.jpg");
 }
 .navbar {
@@ -219,8 +213,9 @@ h3#brand-message {
   display: block;
 }
 #about {
+  max-width: 320px;
   max-height: 250px;
-  width: 360px;
+  margin: 0 0 0 5px;
   padding-top: 60px;
   text-align: center;
 }
@@ -282,9 +277,12 @@ h5.ride-description {
   text-align: center;
   font-style: normal;
 }
+#contact {
+  width: 320px;
+}
 #contact input,
 textarea {
-  margin: 0 0px 10px 10px;
+  margin: 0 0 10px 10px;
   padding: 5px;
   font-family: 'Lato', sans-serif;
 }
@@ -305,14 +303,6 @@ input[type=text],
 input[type=email] {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-}
-#home {
-  height: 350px;
-  width: 400px;
-  position: relative;
-}
-#home div ul li {
-  margin-left: 1.5em;
 }
 #members-only {
   display: none;
@@ -377,6 +367,9 @@ input[type=email] {
   font-weight: 700;
   text-align: center;
   margin: 10px;
+}
+#ride-list {
+  width: 360;
 }
 @media only screen and (min-width: 960px) {
   #image-box {
