@@ -191,11 +191,12 @@ footer .footcontain {
 #home {
   height: 350px;
   position: relative;
+  padding: 0;
 }
 #home #image-box {
   position: absolute;
-  width: 320px;
-  top: 40px;
+  width: 100%;
+  top: 48px;
   height: 320px;
   background-image: url("../img/greenbikecrop.jpg");
 }
@@ -216,9 +217,8 @@ footer .footcontain {
 /*=====End Home=====*/
 /*=====Start About=====*/
 #about {
-  max-width: 320px;
-  max-height: 250px;
-  margin: 0 0 0 5px;
+  width: 330px;
+  margin-left: 14px;
   padding-top: 60px;
   text-align: center;
 }
@@ -296,24 +296,24 @@ footer .footcontain {
   text-align: center;
   font-style: normal;
 }
-.ride-description .ride-descrip {
+.ride-descrip {
   margin: 8px 0px;
   text-align: center;
   color: #a52a2a;
   font-size: 20px;
   font-style: italic;
 }
-.ride-description .ride-specifics {
+.ride-specifics {
   display: inline-block;
   padding: 25px;
 }
-.ride-description .ride-info {
+.ride-info {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #838383;
   font-weight: 500;
 }
-.ride-description .ride-info p {
+.ride-info p {
   margin: 8px 0px;
 }
 .ride-info-name {
@@ -340,11 +340,11 @@ footer .footcontain {
 /*=====End Rides=====*/
 /*=====Start Contact=====*/
 #contact {
-  width: 320px;
+  width: 360px;
 }
 #contact input,
 #contact textarea {
-  margin: 0 0 10px 10px;
+  margin: 6px auto;
   padding: 5px;
 }
 #contact h4 {
@@ -379,18 +379,19 @@ footer .footcontain {
 }
 /*=====Start Media Queries=====*/
 @media only screen and (min-width: 960px) {
-  #image-box {
+  #home {
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    padding: 0;
+  }
+  #home #image-box {
     background: url("../img/greenbike1200.jpg") center center no-repeat;
     height: 100%;
     background-position-y: 85%;
   }
   #about {
     width: 100%;
-  }
-  #home {
-    width: 100%;
-    text-align: center;
-    height: 500px;
   }
   .my-route {
     width: 250px !important;
