@@ -231,10 +231,11 @@ footer {
   background-color: #75ad4c;
   color: #fff;
 }
-footer li,
-footer div,
-footer span {
+footer .footcontain {
   display: inline-block;
+  font-size: 14px;
+  margin: 0 auto;
+  color: #fff;
 }
 .my-route {
   width: 250px !important;
@@ -247,7 +248,7 @@ ul#directions {
   margin-left: 25px;
 }
 #map {
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 h3.ride-title a {
@@ -280,18 +281,18 @@ h5.ride-description {
   text-align: center;
   font-style: normal;
 }
-#main-contact {
-  text-align: center;
-}
 #contact input,
 textarea {
   margin: 0 0px 10px 10px;
-  padding: 10px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
 }
 input,
 textarea {
   background-color: #f6f6f6;
   margin: 10px;
+  border: 3px double #659d44;
+  border-radius: 3px;
 }
 input[type=text],
 input[type=email] {
@@ -364,6 +365,13 @@ input[type=email] {
     width: 100%;
     text-align: center;
     height: 500px;
+  }
+  .my-route {
+    width: 250px !important;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
   }
   h5.area {
     text-align: center;
