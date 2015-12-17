@@ -200,7 +200,10 @@ footer .copyright {
   width: 100%;
   top: 48px;
   height: 320px;
-  background-image: url("../img/greenbikecrop.jpg");
+  background-image: url("../img/greenbike1200.jpg");
+  background-position-x: 70%;
+  background-position-y: 90%;
+  background-size: 200%;
 }
 #home .main-title {
   font-family: "Oswald", cursive;
@@ -270,9 +273,6 @@ footer .copyright {
 #search-form {
   text-align: center;
 }
-#ride-list {
-  width: 360px;
-}
 .my-route {
   width: 250px !important;
   margin: 15px 5px;
@@ -339,10 +339,14 @@ footer .copyright {
   text-align: center;
   margin: 10px;
 }
+.fb-comment-wrapper {
+  width: 320px;
+  margin: 50px auto;
+}
 /*=====End Rides=====*/
 /*=====Start Contact=====*/
 #contact {
-  width: 360px;
+  width: 100%;
 }
 #contact input,
 #contact textarea {
@@ -354,6 +358,10 @@ footer .copyright {
 }
 #contact p {
   text-align: center;
+}
+#contact .contactform {
+  width: 100%;
+  margin-bottom: 50px;
 }
 /*=====End Contact=====*/
 #members-only {
@@ -412,6 +420,9 @@ footer .copyright {
   }
   h2 {
     font-size: 3em;
+  }
+  .fb-comment-wrapper {
+    width: 600px;
   }
   .navbar {
     height: 48.4px;

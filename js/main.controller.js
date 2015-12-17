@@ -100,14 +100,14 @@ app.controller('maincontroller', function($scope) {
      stops: 3,
      description: "Sample the food and drink at these local favorites"
    },
-   {
-     name: "Arts & Crafts",
-     area: "Midtown and East",
-     miles: 11.3,
-     time: 65,
-     stops: 3,
-     description: "Local galleries and handmade items"
-   },
+  //  {
+  //    name: "Arts & Crafts",
+  //    area: "Midtown and East",
+  //    miles: 11.3,
+  //    time: 65,
+  //    stops: 3,
+  //    description: "Local galleries and handmade items"
+  //  },
    {
      name: "I Brake for Art",
      area: "East and Downtown",
