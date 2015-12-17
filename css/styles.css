@@ -230,10 +230,12 @@ footer {
   background-color: #75ad4c;
   color: #fff;
 }
-footer li,
-footer div,
-footer span {
+.container{
   display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
 }
 .my-route {
   width: 250px !important;
@@ -285,12 +287,16 @@ h5.ride-description {
 #contact input,
 textarea {
   margin: 0 0px 10px 10px;
-  padding: 10px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 input,
 textarea {
   background-color: #f6f6f6;
   margin: 10px;
+  border: 3px double #659d44;
+  border-radius: 3px;
 }
 input[type=text],
 input[type=email] {
