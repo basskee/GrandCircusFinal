@@ -6,6 +6,10 @@ header, footer, h1, h2, h3, h4, h5, h6, ul, li, span
   box-sizing border-box
   // font-family arial
 
+@font-face
+	font-family 'GrandHotel'
+	src url('../fonts/GrandHotel-Regular.otf')
+
 html, body
   height 100%
 
@@ -21,12 +25,11 @@ h1
   font-family "Oswald", cursive
   font-weight 700
   line-height 76px
-  font-size 102px
   position absolute
   top 100px
   color white
-  left 50px
-  font-size 40px
+  left 200px
+  font-size 70px
 
 h2
   font-family 'Oswald', sans-serif
@@ -46,7 +49,7 @@ h3
 
 h4
   font-family 'Raleway', sans-serif
-  font-weight 700
+  font-weight 900;
   font-size 16px
   color #2c2b2b
   margin 10px 0
@@ -71,23 +74,38 @@ h5
   margin-left 25px
 
 .login-list
-  font-family 'Oswald', sans-serif
+  font-family 'Lato', sans-serif
   font-weight 700
-  font-size 12px
-  color #da594c
+  font-size 16px
+  color #a52a2a;
 
 .fa{
     margin-right: 10px !important;
   }
+  
+#directions{
+  font-size:24px;
+  margin-top: 25px;
+  }
 //*=====End Font======*//
 
 
-//*====main-title====*//
+//*====Main-titles====*//
 a.main-title
   font-family "Oswald", cursive
   font-weight 700
   color #e1b596
 
+h3#brand-message{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight 700;
+  color:#fff;
+  font-style: italic;
+  position: absolute;
+  top: 170px;
+  left: 250px;
+}
 
 /*====Home*=======*/
 #section{
@@ -117,15 +135,18 @@ a.main-title
   z-index 10
   position fixed
   top 0
-  width 360px
+  width 100%
   height 48.4px
   margin 0
+  border-radius 0
   padding 0
   background-color #75ad4c
+  .big-nav
+    display none
   ul
     position relative
     display inline-table
-    width 360px
+    width 100%
     margin -1px 0 0 -1px
     padding 0
     list-style none
@@ -133,43 +154,43 @@ a.main-title
       float left
       a
         display block
-        padding 15px 30px
+        padding 9px 10px
+        font-family "GrandHotel", "Oswald"
+        font-size 2.3em
+        line-height 1em
         color #fff
         text-decoration none
       ul
         display none
         position absolute
-        top 100%
+        top 99%
         left 1px
         width 100%
-        background #5f6975
+        background #528130
         li
           float none
           position relative
+          font-family "Oswald"
         a
           text-align center
           padding 5px 10px
         a:hover
-          background #4b545f
-        ul
-          position absolute
-          left 100%
-          top 0
+          background #629140
     li:hover
-      background-color #4b545f
+      background-color #629140
     li:hover > ul
       display block
     li:hover a
       color #fff
     .hamburger
       float right
-      font-size 2.4em
+      font-size 1.6em
       font-weight bold
       a
-        padding 0 20px 1px 20px
+        padding 0 20px
       ul
         li
-          font-size 1em
+          font-size .5em
           font-weight normal
   ul:after
     content ""
@@ -201,6 +222,14 @@ footer
 
 //*=====RIDE PAGE START =====*/
 
+.my-route{
+  width:250px !important;
+  margin:15px 5px 15px 5px;
+  padding:5px;
+  display:inline-block;
+  vertical-align:top;
+}
+
 ul#directions{
   margin-left: 25px;
 }
@@ -226,15 +255,22 @@ ul.login li{
   font-weight:400;
 }
 #rides{
-  padding-top 20px;
+  padding-top 60px;
 }
 #rides h3{
   text-align: center;
   }
-
+#search{
+  margin-top: 25px;
+}
 #search-form{
   text-align: center;
 }
+h5.ride-description{
+    text-align:center;
+    font-style:normal;
+  }
+
 //*=====RIDE PAGE END =====*/
 //*=====CONTACT =====*/
 #main-contact
@@ -315,16 +351,21 @@ margin: 8px 0px;
 
 //*====MEDIA QUERIES=====*//
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px)
   #image-box{
   background-image: url("../img/greenbike1200.jpg");
   height: 100%;
+  background-repeat:no-repeat;
+  background-position-x: 50%;
+  background-position-y: 85%;
   }
   #about {
     width: 100%;
   }
   #home {
     width: 100%;
+    text-align:center;
+    height:450px;
   }
   .my-route{
     width:250px !important;
@@ -333,12 +374,17 @@ margin: 8px 0px;
     display:inline-block;
     vertical-align:top;
   }
+  // .my-route{
+  //   width:250px !important;
+  //   margin:5px;
+  //   padding:5px;
+  //   display:inline-block;
+  //   vertical-align:top;
+  // }
   h5.area{
     text-align:center;
   }
-  p.ride-description{
-    text-align:center;
-  }
+  
   .miles, .time, .stops{
     margin-left: 60px;
   }
@@ -348,7 +394,26 @@ margin: 8px 0px;
   h2{
     font-size: 3em;
   }
-  .navbar{
-    width: 100%;
-  }
-}
+
+  .navbar
+    height 48.4px
+    .big-nav
+      display inline-block
+      a
+        height 50.4px
+        font-family "Oswald"
+        font-size 1.75em
+        line-height 1.25em
+    .big-nav:nth-child(2n)
+      a
+        font-style italic
+    .big-nav:nth-child(3n)
+      float right
+    .big-nav:nth-child(4n)
+      float right
+      a
+        font-style normal
+    .big-nav:nth-child(5n)
+      float right
+    .hamburger
+      display none
