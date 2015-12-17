@@ -144,9 +144,9 @@ footer .copyright {
 .navbar ul li ul {
   display: none;
   position: absolute;
-  top: 99%;
+  top: 100%;
   left: 1px;
-  width: 100%;
+  width: 101%;
   background: #528130;
 }
 .navbar ul li ul li {
@@ -273,6 +273,9 @@ footer .copyright {
 #search-form {
   text-align: center;
 }
+#ridelist-col {
+  margin-left: 15px;
+}
 .my-route {
   width: 250px !important;
   margin: 15px 5px;
@@ -347,6 +350,7 @@ footer .copyright {
 /*=====Start Contact=====*/
 #contact {
   width: 100%;
+  margin: 0;
 }
 #contact input,
 #contact textarea {
@@ -402,6 +406,10 @@ footer .copyright {
   }
   #about {
     width: 100%;
+    padding-top: 140px;
+  }
+  #rides {
+    padding-top: 140px;
   }
   .my-route {
     width: 250px !important;
@@ -423,6 +431,9 @@ footer .copyright {
   }
   .fb-comment-wrapper {
     width: 600px;
+  }
+  #ridelist-col {
+    margin-left: 0;
   }
   .navbar {
     height: 48.4px;
