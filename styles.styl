@@ -192,8 +192,12 @@ text-align: center;
 footer
   background-color #75ad4c
   color #FFF
-  li, div, span
+  .container
     display inline-block
+    font-size 14px
+    // padding 5px
+    text-align center
+    color white
 
 //*=====RIDE PAGE START =====*/
 
@@ -233,29 +237,29 @@ ul.login li{
 }
 //*=====RIDE PAGE END =====*/
 //*=====CONTACT =====*/
-#main-contact{
-text-align:center;
-}
-
+#main-contact
+      
 #contact input, textarea{
 margin: 0 0px 10px 10px;
-padding: 10px;
-}
+padding: 5px;
+font-family 'Lato', sans-serif
+
 input, textarea{
-background-color: #f6f6f6;
-margin: 10px;
+background-color: #F6f6f6
+margin: 10px
+border 3px double #659D44
+border-radius 3px
 }
 
 input[type=text],
 input[type=email],{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+
 }
 
-#contact p{
-  font-size: 16px;
-}
-
+#contact p
+    font-size: 16px;
 
 //*=====CONTACT END =====*/
 //*======Home page CSS======*//
@@ -269,8 +273,6 @@ input[type=email],{
     ul
       li
         margin-left 1.5em
-
-
 .home-image
   position: absolute;
   width: 100%;
@@ -324,7 +326,6 @@ margin: 8px 0px;
   #home {
     width: 100%;
   }
-
   .my-route{
     width:250px !important;
     margin:5px;
