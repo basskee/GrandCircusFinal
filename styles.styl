@@ -1,7 +1,7 @@
 html, body, a, p, section, div, nav, img,
 header, footer, h1, h2, h3, h4, h5, h6, ul, li, span
   margin 0
-  padding 0
+  padding 0                 /* CSS Reset */
   -moz-box-sizing border-box
   box-sizing border-box
 
@@ -9,16 +9,16 @@ header, footer, h1, h2, h3, h4, h5, h6, ul, li, span
 	font-family 'GrandHotel'
 	src url('../fonts/GrandHotel-Regular.otf')
 
+/*=====Start Tag-Wide=====*/
 html, body
   height 100%
-
-//*=====Font======*//
+section
+  padding-top 40px
 p
   font-family 'Lato', sans-serif
   font-size 16px
   color #838383
   font-weight 700
-
 h1
   font-family "Oswald", cursive
   font-weight 700
@@ -26,9 +26,7 @@ h1
   position absolute
   top 100px
   color white
-  left 200px
   font-size 70px
-
 h2
   font-family 'Oswald', sans-serif
   font-weight 700
@@ -37,14 +35,12 @@ h2
   margin 10px 0 25px 0;
   text-align center
   text-transform uppercase
-
 h3
   font-family 'Oswald', sans-serif
   font-weight 400
   font-size 22px
   color #E1B596
   margin 10px 0
-
 h4
   font-family 'Raleway', sans-serif
   font-weight 900;
@@ -52,7 +48,6 @@ h4
   color #2c2b2b
   margin 10px 0
   text-transform capitalize
-
 h5
   font-family 'Lato', sans-serif
   font-size 16px
@@ -61,70 +56,25 @@ h5
   font-style italic
   .area
     text-align center
-
-.miles, .time, .stops
+input, textarea
+  margin 10px
+  border 3px double #659D44
+  border-radius 3px
   font-family 'Lato', sans-serif
-  font-size 12px
   font-weight 400
-  color #2c2b2b
-  text-transform uppercase
-  margin-left 25px
+  background-color #F6f6f6
+footer
+  background-color #75ad4c
+  color #FFF
+  .footcontain
+    display inline-block
+    font-size 14px
+    text-align center
+    color white
+    padding 10px
+/*=====End Tag-Wide=====*/
 
-.login-list
-  font-family 'Lato', sans-serif
-  font-weight 700
-  font-size 16px
-  color #a52a2a;
-
-.fa
-  margin-right 10px !important
-
-#directions
-  font-size 28px
-  margin-top 25px
-  font-weight 500
-//*=====End Font======*//
-
-
-//*====Main-titles====*//
-a.main-title
-  font-family "Oswald", cursive
-  font-weight 700
-  color #e1b596
-
-h3#brand-message
-  font-family 'Lato', sans-serif
-  font-size 30px
-  font-weight 700
-  color #fff
-  font-style italic
-  position absolute
-  top 170px
-  left 250px
-
-/*====Home*=======*/
-#section
-  padding-top 40px
-
-#home
-  height 350px
-  width 400px
-  position relative
-
-#home
-  div
-    ul
-      li
-        margin-left 1.5em
-
-#image-box
-  position absolute
-  width 100%
-  top 40px
-  padding-top 10px
-  background-image url("../img/greenbikecrop.jpg")
-
-// Navbar CSS
+/*=====Start Nav=====*/
 .navbar
   z-index 10
   position fixed
@@ -189,105 +139,151 @@ h3#brand-message
   ul:after
     content ""
     clear both
-    display block
+      display block
+/*=====End Nav=====*/
 
-//*====== ABOUT START====*//
+/*=====Start Home=====*/
+#home
+  height 350px
+  position relative
+  #image-box
+    position absolute
+    width 320px
+    top 40px
+    height 320px
+    background-image url("../img/greenbikecrop.jpg")
+  .main-title
+    font-family "Oswald", cursive
+    font-weight 700
+    color #e1b596
+  #brand-message
+    font-family 'Lato', sans-serif
+    font-size 30px
+    font-weight 700
+    color #fff
+    font-style italic
+    position absolute
+    top 170px
+/*=====End Home=====*/
+
+/*=====Start About=====*/
 #about
+  max-width 320px
   max-height 250px
-  width 360px
+  margin 0 0 0 5px
   padding-top 60px
   text-align center
   p
     text-align justify
+/*=====End About=====*/
 
-//*====== ABOUT END====*//
+.fa
+  margin-right 10px !important
 
-footer
-  background-color #75ad4c
-  color #FFF
-  .container
-    display inline-block
-    font-size 14px
+.miles, .time, .stops
+  font-family 'Lato', sans-serif
+  font-size 12px
+  font-weight 400
+  color #2c2b2b
+  text-transform uppercase
+  margin-left 25px
+
+.login-list
+  font-family 'Lato', sans-serif
+  font-weight 700
+  font-size 16px
+  color #a52a2a;
+
+
+/*=====Start Rides=====*/
+#rides
+  padding-top 60px
+  h3
     text-align center
-    color white
-    padding 10px
-
-//*=====RIDE PAGE START =====*/
-
+#map
+  height 250px
+  width 100%
+#directions
+  margin-top 25px
+  margin-left 25px
+  font-size 28px
+  font-weight 500
+#search
+  margin-top 25px
+#search-form
+  text-align center
+#ride-list
+  width 360px
 .my-route
   width 250px !important
   margin 15px 5px
   padding 5px
   display inline-block
   vertical-align top
-
-ul#directions
-  margin-left 25px
-
-#map
-  height 250px
-  width 100%
-
-h3.ride-title a
-  text-decoration none
-  color brown
-  text-align center
-
-ul.login
-  margin-left 25px
-
-ul.login li
-  font-family 'Lato', sans-serif
-  font-size 12px
-  color #838383
-  font-weight 400
-
-#rides
-  padding-top 60px
-  h3
+.ride-title
+  a
+    text-decoration none
+    color brown
     text-align center
-
-#search
-  margin-top 25px
-
-#search-form
-  text-align center
-
-h5.ride-description
+.login
+  margin-left 25px
+  li
+    font-family 'Lato', sans-serif
+    font-size 12px
+    color #838383
+    font-weight 400
+.ride-description
   text-align center
   font-style normal
+  .ride-descrip
+    margin 8px 0px
+    text-align center
+    color #a52a2a
+    font-size 20px
+    font-style italic
 
-//*=====RIDE PAGE END =====*/
-//*=====CONTACT =====*/
-#contact input, textarea
-  margin 0 0px 10px 10px
-  padding 5px
+  .ride-specifics
+    display inline-block
+    padding 25px
+
+  .ride-info
+    font-family 'Lato', sans-serif
+    font-size 16px
+    color #838383
+    font-weight 500
+    p
+      margin 8px 0px
+.ride-info-name
   font-family 'Lato', sans-serif
-#contact h4
+  font-size 18px
+  color #838383
+  font-weight 700
+  font-weight bold
+.map-title
+  font-size 25px
+  color #a52a2a
+  font-family 'Oswald', sans-serif
+  font-weight 500
+.map-info
+  font-family 'Lato', sans-serif
+  font-size 16px
+  color #a52a2a
+  font-weight 700
   text-align center
-#contact p
-  text-align center
-input, textarea
-  background-color #F6f6f6
   margin 10px
-  border 3px double #659D44
-  border-radius 3px
+/*=====End Rides=====*/
 
-input[type=text],
-input[type=email]
-  font-family 'Lato', sans-serif
-  font-weight 400
-
-//*=====CONTACT END =====*/
-//*======Home page CSS======*//
-#home
-  height 350px
-  width 400px
-  position relative
-  div
-    ul
-      li
-        margin-left 1.5em
+/*=====Start Contact=====*/
+#contact
+  width 320px
+  input, textarea
+    margin 0 0 10px 10px
+    padding 5px
+  h4
+    text-align center
+  p
+    text-align center
+/*=====End Contact=====*/
 
 // Members Only Pop-up
 #members-only
@@ -311,53 +307,11 @@ input[type=email]
     display inline-block
     float right
 
-//*=====RIDE 1 PAGE START =====*/
-.ride-descrip
-  margin 8px 0px
-  text-align center
-  color #a52a2a
-  font-size 20px
-  font-style italic
-
-.ride-specifics
-  display inline-block
-  padding 25px
-
-.ride-info
-  font-family 'Lato', sans-serif
-  font-size 16px
-  color #838383
-  font-weight 500
-  p
-    margin 8px 0px
-
-.ride-info-name
-  font-family 'Lato', sans-serif
-  font-size 18px
-  color #838383
-  font-weight 700
-  font-weight bold
-
-.map-title
-  font-size 25px
-  color #a52a2a
-  font-family 'Oswald', sans-serif
-  font-weight 500
-
-.map-info
-  font-family 'Lato', sans-serif
-  font-size 16px
-  color #a52a2a
-  font-weight 700
-  text-align center
-  margin 10px
-
-//*====MEDIA QUERIES=====*//
+/*=====Start Media Queries=====*/
 @media only screen and (min-width: 960px)
   #image-box
     background url("../img/greenbike1200.jpg") center center no-repeat
     height 100%
-    // background-position-x 50%
     background-position-y 85%
   #about
     width 100%
@@ -371,8 +325,6 @@ input[type=email]
     padding 5px
     display inline-block
     vertical-align top
-  h5.area
-    text-align center
   .miles, .time, .stops
     margin-left 60px
   #fb-row
@@ -402,3 +354,4 @@ input[type=email]
       float right
     .hamburger
       display none
+/*=====End Media Queries=====*/

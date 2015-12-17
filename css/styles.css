@@ -18,7 +18,7 @@ ul,
 li,
 span {
   margin: 0;
-  padding: 0;
+  padding: 0 /* CSS Reset */;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -26,9 +26,13 @@ span {
   font-family: 'GrandHotel';
   src: url("../fonts/GrandHotel-Regular.otf");
 }
+/*=====Start Tag-Wide=====*/
 html,
 body {
   height: 100%;
+}
+section {
+  padding-top: 40px;
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -43,7 +47,6 @@ h1 {
   position: absolute;
   top: 100px;
   color: #fff;
-  left: 200px;
   font-size: 70px;
 }
 h2 {
@@ -80,64 +83,28 @@ h5 {
 h5 .area {
   text-align: center;
 }
-.miles,
-.time,
-.stops {
+input,
+textarea {
+  margin: 10px;
+  border: 3px double #659d44;
+  border-radius: 3px;
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
   font-weight: 400;
-  color: #2c2b2b;
-  text-transform: uppercase;
-  margin-left: 25px;
+  background-color: #f6f6f6;
 }
-.login-list {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #a52a2a;
-}
-.fa {
-  margin-right: 10px !important;
-}
-#directions {
-  font-size: 28px;
-  margin-top: 25px;
-  font-weight: 500;
-}
-a.main-title {
-  font-family: "Oswald", cursive;
-  font-weight: 700;
-  color: #e1b596;
-}
-h3#brand-message {
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+footer {
+  background-color: #75ad4c;
   color: #fff;
-  font-style: italic;
-  position: absolute;
-  top: 170px;
-  left: 250px;
 }
-/*====Home*=======*/
-#section {
-  padding-top: 40px;
+footer .footcontain {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
 }
-#home {
-  height: 350px;
-  width: 400px;
-  position: relative;
-}
-#home div ul li {
-  margin-left: 1.5em;
-}
-#image-box {
-  position: absolute;
-  width: 100%;
-  top: 40px;
-  padding-top: 10px;
-  background-image: url("../img/greenbikecrop.jpg");
-}
+/*=====End Tag-Wide=====*/
+/*=====Start Nav=====*/
 .navbar {
   z-index: 10;
   position: fixed;
@@ -215,28 +182,94 @@ h3#brand-message {
 }
 .navbar ul:after {
   content: "";
-  clear: both;
+}
+.navbar ul:after clear both {
   display: block;
 }
+/*=====End Nav=====*/
+/*=====Start Home=====*/
+#home {
+  height: 350px;
+  position: relative;
+}
+#home #image-box {
+  position: absolute;
+  width: 320px;
+  top: 40px;
+  height: 320px;
+  background-image: url("../img/greenbikecrop.jpg");
+}
+#home .main-title {
+  font-family: "Oswald", cursive;
+  font-weight: 700;
+  color: #e1b596;
+}
+#home #brand-message {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  position: absolute;
+  top: 170px;
+}
+/*=====End Home=====*/
+/*=====Start About=====*/
 #about {
+  max-width: 320px;
   max-height: 250px;
-  width: 360px;
+  margin: 0 0 0 5px;
   padding-top: 60px;
   text-align: center;
 }
 #about p {
   text-align: justify;
 }
-footer {
-  background-color: #75ad4c;
-  color: #fff;
+/*=====End About=====*/
+.fa {
+  margin-right: 10px !important;
 }
-footer .container {
-  display: inline-block;
-  font-size: 14px;
+.miles,
+.time,
+.stops {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2c2b2b;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+.login-list {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #a52a2a;
+}
+/*=====Start Rides=====*/
+#rides {
+  padding-top: 60px;
+}
+#rides h3 {
   text-align: center;
-  color: #fff;
-  padding: 10px;
+}
+#map {
+  height: 250px;
+  width: 100%;
+}
+#directions {
+  margin-top: 25px;
+  margin-left: 25px;
+  font-size: 28px;
+  font-weight: 500;
+}
+#search {
+  margin-top: 25px;
+}
+#search-form {
+  text-align: center;
+}
+#ride-list {
+  width: 360px;
 }
 .my-route {
   width: 250px !important;
@@ -245,116 +278,42 @@ footer .container {
   display: inline-block;
   vertical-align: top;
 }
-ul#directions {
-  margin-left: 25px;
-}
-#map {
-  height: 250px;
-  width: 100%;
-}
-h3.ride-title a {
+.ride-title a {
   text-decoration: none;
   color: #a52a2a;
   text-align: center;
 }
-ul.login {
+.login {
   margin-left: 25px;
 }
-ul.login li {
+.login li {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #838383;
   font-weight: 400;
 }
-#rides {
-  padding-top: 60px;
-}
-#rides h3 {
-  text-align: center;
-}
-#search {
-  margin-top: 25px;
-}
-#search-form {
-  text-align: center;
-}
-h5.ride-description {
+.ride-description {
   text-align: center;
   font-style: normal;
 }
-#contact input,
-textarea {
-  margin: 0 0px 10px 10px;
-  padding: 5px;
-  font-family: 'Lato', sans-serif;
-}
-#contact h4 {
-  text-align: center;
-}
-#contact p {
-  text-align: center;
-}
-input,
-textarea {
-  background-color: #f6f6f6;
-  margin: 10px;
-  border: 3px double #659d44;
-  border-radius: 3px;
-}
-input[type=text],
-input[type=email] {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-#home {
-  height: 350px;
-  width: 400px;
-  position: relative;
-}
-#home div ul li {
-  margin-left: 1.5em;
-}
-#members-only {
-  display: none;
-  height: 110px;
-  width: 200px;
-  border-radius: 15px;
-  padding: 5px 5px 5px 10px;
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  color: #e9cf92;
-  background-color: #4f2512;
-}
-#members-only p {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  font-weight: bold;
-  color: #e9cf92;
-}
-#members-only img {
-  display: inline-block;
-  float: right;
-}
-.ride-descrip {
+.ride-description .ride-descrip {
   margin: 8px 0px;
   text-align: center;
   color: #a52a2a;
   font-size: 20px;
   font-style: italic;
 }
-.ride-specifics {
+.ride-description .ride-specifics {
   display: inline-block;
   padding: 25px;
 }
-.ride-info {
+.ride-description .ride-info {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #838383;
   font-weight: 500;
 }
-.ride-info p {
+.ride-description .ride-info p {
   margin: 8px 0px;
 }
 .ride-info-name {
@@ -378,6 +337,47 @@ input[type=email] {
   text-align: center;
   margin: 10px;
 }
+/*=====End Rides=====*/
+/*=====Start Contact=====*/
+#contact {
+  width: 320px;
+}
+#contact input,
+#contact textarea {
+  margin: 0 0 10px 10px;
+  padding: 5px;
+}
+#contact h4 {
+  text-align: center;
+}
+#contact p {
+  text-align: center;
+}
+/*=====End Contact=====*/
+#members-only {
+  display: none;
+  height: 110px;
+  width: 200px;
+  border-radius: 15px;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e9cf92;
+  background-color: #4f2512;
+}
+#members-only p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e9cf92;
+}
+#members-only img {
+  display: inline-block;
+  float: right;
+}
+/*=====Start Media Queries=====*/
 @media only screen and (min-width: 960px) {
   #image-box {
     background: url("../img/greenbike1200.jpg") center center no-repeat;
@@ -398,9 +398,6 @@ input[type=email] {
     padding: 5px;
     display: inline-block;
     vertical-align: top;
-  }
-  h5.area {
-    text-align: center;
   }
   .miles,
   .time,
@@ -444,3 +441,4 @@ input[type=email] {
     display: none;
   }
 }
+/*=====End Media Queries=====*/
