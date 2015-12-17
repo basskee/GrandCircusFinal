@@ -100,8 +100,9 @@ h5 .area {
   margin-right: 10px !important;
 }
 #directions {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 25px;
+  font-weight: 500;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -314,6 +315,13 @@ input[type=email] {
   top: 40px;
   padding-top: 10px;
 }
+.btn {
+  background-color: #e1b596;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #fff;
+}
 #members-only {
   display: none;
   height: 110px;
@@ -345,10 +353,8 @@ input[type=email] {
 }
 @media only screen and (min-width: 960px) {
   #image-box {
-    background-image: url("../img/greenbike1200.jpg");
+    background: url("../img/greenbike1200.jpg") center center no-repeat;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
     background-position-y: 85%;
   }
   #about {
@@ -357,7 +363,7 @@ input[type=email] {
   #home {
     width: 100%;
     text-align: center;
-    height: 450px;
+    height: 500px;
   }
   h5.area {
     text-align: center;
