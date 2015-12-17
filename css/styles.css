@@ -230,10 +230,10 @@ footer {
   background-color: #75ad4c;
   color: #fff;
 }
-footer .footcontain {
+footer .container {
   display: inline-block;
   font-size: 14px;
-  margin: 0 auto;
+  text-align: center;
   color: #fff;
 }
 .my-route {
