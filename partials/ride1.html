@@ -1,15 +1,15 @@
 <div class="ridecol-top">
-	<h2>{{rides[0].name}}</h2>
-	<div>
-		<span>{{rides[0].miles}} mi</span>
-		<span>{{rides[0].time}} min</span>
-		<span>{{rides[0].stops}} stops</span>
+	<h2 class="map-title">{{rides[0].name}}</h2>
+	<div class="map-info">
+		<span><i class="fa fa-map-marker"></i>{{rides[0].miles}}mi /  </span>
+		<span><i class="fa fa-clock-o"></i>{{rides[0].time}}min  /  </span>
+		<span><i class="fa fa-flag-o"></i>{{rides[0].stops}}stops</span>
 	</div>
 	<div id="map"></div>
-	<h4>description</h4>
-	<p class="ride-info">Build your picnic as you bike to Belle Isle.</p>
-	<div ng-repeat="stop in rides[0].waypoints">
-		<p class="ride-info">{{stop.name}}</p>
+	<!-- <h4>description</h4> -->
+	<p class="ride-descrip">Build your picnic as you bike to Belle Isle</p>
+	<div class="ride-specifics" ng-repeat="stop in rides[0].waypoints">
+		<p class="ride-info-name">{{stop.name}}</p>
 		<p class="ride-info">{{stop.hours}}</p>
 		<p class="ride-info">{{stop.what}}</p>
 	</div>
