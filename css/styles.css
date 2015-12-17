@@ -100,8 +100,9 @@ h5 .area {
   margin-right: 10px !important;
 }
 #directions {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 25px;
+  font-weight: 500;
 }
 a.main-title {
   font-family: "Oswald", cursive;
@@ -390,7 +391,7 @@ text-align center {
   #home {
     width: 100%;
     text-align: center;
-    height: 450px;
+    height: 500px;
   }
   .my-route {
     width: 250px !important;
