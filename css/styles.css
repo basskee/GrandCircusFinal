@@ -81,7 +81,7 @@ h5 {
   font-style: italic;
 }
 h5 .area {
-  text-align: center;
+  text-align: left;
 }
 input,
 textarea {
@@ -100,8 +100,10 @@ footer .footcontain {
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  color: #fff;
   padding: 10px;
+}
+footer .copyright {
+  color: #fff;
 }
 /*=====End Tag-Wide=====*/
 /*=====Start Nav=====*/
@@ -217,7 +219,6 @@ footer .footcontain {
 /*=====Start About=====*/
 #about {
   max-width: 320px;
-  max-height: 250px;
   margin: 0 0 0 5px;
   padding-top: 60px;
   text-align: center;
@@ -242,7 +243,7 @@ footer .footcontain {
 .login-list {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   color: #a52a2a;
 }
 /*=====Start Rides=====*/
@@ -293,27 +294,27 @@ footer .footcontain {
   font-weight: 400;
 }
 .ride-description {
-  text-align: center;
+  text-align: left;
   font-style: normal;
 }
-.ride-description .ride-descrip {
+.ride-descrip {
   margin: 8px 0px;
   text-align: center;
   color: #a52a2a;
   font-size: 20px;
   font-style: italic;
 }
-.ride-description .ride-specifics {
+.ride-specifics {
   display: inline-block;
   padding: 25px;
 }
-.ride-description .ride-info {
+.ride-info {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #838383;
   font-weight: 500;
 }
-.ride-description .ride-info p {
+.ride-info p {
   margin: 8px 0px;
 }
 .ride-info-name {
