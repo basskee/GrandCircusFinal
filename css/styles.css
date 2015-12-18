@@ -419,7 +419,7 @@ footer div {
 }
 /*=====End Contact=====*/
 #members-only {
-  display: none;
+  display: inline-block;
   height: 110px;
   width: 200px;
   border-radius: 15px;
@@ -427,15 +427,14 @@ footer div {
   text-align: left;
   font-size: 14px;
   font-weight: bold;
-  color: #e9cf92;
-  background-color: #4f2512;
+  color: #a52a2a;
 }
 #members-only p {
   margin: 0;
   padding: 0;
   font-size: 14px;
   font-weight: bold;
-  color: #e9cf92;
+  color: #a52a2a;
 }
 #members-only img {
   display: inline-block;
@@ -478,7 +477,7 @@ footer div {
   }
   .my-route {
     width: 250px !important;
-    margin: 5px;
+    margin: 5px 60px 5px 5px;
     padding: 5px;
     display: inline-block;
     vertical-align: top;
@@ -488,8 +487,14 @@ footer div {
   .stops {
     margin-left: 60px;
   }
-  #fb-row {
-    margin-bottom: 25px;
+  .login {
+    width: 400px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+  }
+  .asdf {
+    position: relative;
+    top: -140px;
   }
   h2 {
     font-size: 3em;
@@ -497,14 +502,28 @@ footer div {
   h1 {
     left: 110px;
   }
+  #members-only {
+    display: inline-block;
+    visibility: hidden;
+  }
   #brand-message {
     left: 170px;
+  }
+  .fb-login-wrapper {
+    position: relative;
+    width: 300px;
+    top: 30px;
+    left: 700px;
   }
   .fb-comment-wrapper {
     width: 600px;
   }
+  #search-form input {
+    width: 300px;
+  }
   #ridelist-col {
-    margin-left: 0;
+    margin: 0 auto;
+    padding-left: 120px;
   }
   .navbar {
     height: 48.4px;
