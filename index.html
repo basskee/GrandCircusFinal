@@ -48,9 +48,9 @@
 
   <section id="home" class="container">
     <div id="image-box" class="container">
-          <h1>Kickstand</h1>
-          <h3 id="brand-message">Drop Your Kickstand, Discover Detroit</h3>
-          <a href="#rides"><h2>Take a Ride</h2></a>
+      <h1>Kickstand</h1>
+      <h3 id="brand-message">Drop Your Kickstand, Discover Detroit</h3>
+      <a href="#rides"><h2>Take a Ride</h2></a>
     </div>
   </section>
 
@@ -67,12 +67,14 @@
 
   <section id="rides" class="container">
     <h2>Take a Ride </h2>
-    <div class="fb-login-button" data-scope="public_profile, email, user_friends" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
-    <div id="members-only">
-      <div id="mem-content">
+    <div class="fb-login-wrapper">
+      <div class="fb-login-button" data-scope="public_profile, email, user_friends" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
+      <div id="members-only">
+        <div id="mem-content">
+        </div>
       </div>
     </div>
-    <ng-view></ng-view>
+    <ng-view class="asdf"></ng-view>
     <div class="fb-comment-wrapper">
       <div class="fb-comments" data-href="http://aarondesanto.github.io/" data-numposts="5"></div>
     </div>
