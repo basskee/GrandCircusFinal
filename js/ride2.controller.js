@@ -50,20 +50,26 @@ app.controller('ride2control', function($scope, mapservicetwo) {
      stops: 3,
      waypoints:[
         {
+         flag: "img/mapA.jpg",          
          name: "Batch Brewing Company",
          hours: "Mon-Thur 11a-10p, Fri-Sat 11a-12a",
-         what: "Beer"
+         what: "Beer",
+         offer: true         
          },
          {
+          flag: "img/mapB.jpg",
           name: "Rivard Plaza",
           hours: "Seasonal",
-          what: "Carousel, gardens & fountains"
+          what: "Carousel, gardens & fountains",
+          offer: false          
           },
           {
-         name: "Atwater Brewery",
-         hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
-         what: "Beer"
-         },
+           flag: "img/redC.jpg",            
+           name: "Atwater Brewery",
+           hours: "Mon-Fri 5p-10p, Sat 9a-4p, Sun 12p-8p",
+           what: "Beer",
+           offer: true
+          },
        ]
      },
    {
