@@ -258,6 +258,7 @@ footer div {
 }
 #about p {
   text-align: justify;
+  margin-bottom: 80px;
 }
 /*=====End About=====*/
 .fa {
@@ -384,6 +385,19 @@ footer div {
 }
 /*=====End Rides=====*/
 /*=====Start Contact=====*/
+.mask {
+  overflow: hidden;
+  height: 20px;
+}
+.mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 65%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px #000;
+}
 #contact {
   width: 100%;
   margin: 0;
