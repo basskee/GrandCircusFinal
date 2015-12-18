@@ -258,6 +258,7 @@ footer div {
 }
 #about p {
   text-align: justify;
+  margin-bottom: 80px;
 }
 /*=====End About=====*/
 .fa {
@@ -346,6 +347,7 @@ footer div {
   font-size: 16px;
   color: #838383;
   font-weight: 500;
+  padding-left: 28px;
 }
 .ride-info p {
   margin: 8px 0px;
@@ -371,12 +373,31 @@ footer div {
   text-align: center;
   margin: 10px;
 }
+.ride-info-flag {
+  height: 32px;
+}
+.memicon {
+  margin-right: 3px;
+}
 .fb-comment-wrapper {
   width: 320px;
   margin: 50px auto;
 }
 /*=====End Rides=====*/
 /*=====Start Contact=====*/
+.mask {
+  overflow: hidden;
+  height: 20px;
+}
+.mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 65%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px #000;
+}
 #contact {
   width: 100%;
   margin: 0;

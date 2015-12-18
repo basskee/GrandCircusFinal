@@ -15,30 +15,39 @@ app.controller('ride1control', function($scope, mapservice) {
      stops:  5,
      waypoints: [
        {
-         // flag: "../image/mapA.jpg"
+         flag: "img/mapA.jpg",
          name: "Eastern Market Sheds",
          hours: "Sat 7a-4p, Sun 10a-4p, Tues 9a-3p (June-Oct)",
-         what: "Fresh Produce"
+         what: "Fresh Produce",
+         offer: false
        },
        {
+         flag: "img/mapB.jpg",
          name: "DeVries & Co. 1887",
          hours: "Tues-Fri 9a-5p, Sat 7a-4p",
-         what: "Artisan Cheese"
+         what: "Artisan Cheese",
+         offer: true
        },
        {
+         flag: "img/mapC.jpg",
          name: "Germack Pistachio Co.",
          hours: "Mon-Sat 8a-4:30p, Sun 10a-4p",
-         what: "Nuts and Snacks"
+         what: "Nuts and Snacks",
+         offer: true
        },
        {
+         flag: "img/mapD.jpg",
          name: "CostPlus Wine",
          hours: "Tues-Fri 9a-6p, Sat 7:30a-4:30p",
-         what: "Beer and Wine"
+         what: "Beer and Wine",
+         offer: false
        },
        {
-         name: "Anna Scripps Whitcomb Conservatory",
+         flag: "img/mapE.jpg",
+         name: "Belle Isle Conservatory",
          hours: "Wed-Sun 10a-5p",
-         what: "Conservatory and Botanical Gardens"
+         what: "Conservatory and Botanical Gardens",
+         offer: false
        },
      ]
    },

@@ -8,8 +8,11 @@
 	<div id="map"></div>
 	<p class="ride-descrip">Build your picnic as you bike to Belle Isle</p>
 	<div class="ride-specifics" ng-repeat="stop in rides[0].waypoints">
-		<!-- <p class="ride-info-flag">{{stop.flag}}</p> -->
-		<p class="ride-info-name">{{stop.name}}</p>
+		<p class="ride-info-name">
+			<img src="{{stop.flag}}" class="ride-info-flag"/>
+			{{stop.name}}
+			<img src="img/memicon32.png" class="memicon" ng-show="{{stop.offer}}"/>
+		</p>
 		<p class="ride-info">{{stop.hours}}</p>
 		<p class="ride-info">{{stop.what}}</p>
 	</div>
