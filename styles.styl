@@ -24,9 +24,9 @@ h1
   font-weight 700
   line-height 76px
   position absolute
-  top 100px
   color white
-  font-size 70px
+  font-size 91px
+  text-shadow 4px 4px 2px rgba(0, 0, 0, 0.8)
 h2
   font-family 'Oswald', sans-serif
   font-weight 700
@@ -67,12 +67,17 @@ footer
   background-color #75ad4c
   color #FFF
   .footcontain
-    display inline-block
     font-size 14px
-    text-align center
     padding 10px
+    margin 0 auto 
   .copyright
     color white
+    margin 0 auto
+  .footterms
+    text-align center
+    margin 0 auto 
+  div
+    text-align center
 /*=====End Tag-Wide=====*/
 
 /*=====Start Nav=====*/
@@ -108,9 +113,9 @@ footer
       ul
         display none
         position absolute
-        top 99%
+        top 100%
         left 1px
-        width 100%
+        width 101%
         background #528130
         li
           float none
@@ -157,10 +162,8 @@ footer
     background-position-x 70%
     background-position-y 90%
     background-size 200%
-  .main-title
-    font-family "Oswald", cursive
-    font-weight 700
-    color #e1b596
+  h1
+    top 30px
   #brand-message
     font-family 'Lato', sans-serif
     font-size 30px
@@ -168,7 +171,28 @@ footer
     color #fff
     font-style italic
     position absolute
-    top 170px
+    top 100px
+    left 80px
+    text-shadow 4px 4px 2px rgba(0, 0, 0, 0.8)
+  a
+    display inline-block
+    position absolute
+    top 240px
+    left 100px
+    padding 5px 10px 0 10px
+    border-radius 10px
+    background-color #75ad4c
+    box-shadow 3px 3px 2px rgba(0, 0, 0, 0.5)
+    h2
+      display inline-block
+      margin-top 15px
+      color #fff
+      text-transform none
+      font-size 1.5em
+      font-style none
+      font-weight normal
+  a:hover
+    background-color #629140
 /*=====End Home=====*/
 
 /*=====Start About=====*/
@@ -216,6 +240,8 @@ footer
   margin-top 25px
 #search-form
   text-align center
+#ridelist-col
+  margin-left 15px
 .my-route
   width 250px !important
   margin 15px 5px
@@ -284,6 +310,7 @@ footer
 /*=====Start Contact=====*/
 #contact
   width 100%
+  margin 0
   input, textarea
     margin 6px auto
     padding 5px
@@ -329,8 +356,22 @@ footer
       background url("../img/pic2.0.jpg") center center no-repeat
       height 100%
       background-position-y 85%
+    h1
+      top 100px
+    #brand-message
+      top 170px
+    a
+      top 260px
+      left 260px
+      padding 20px 40px 10px 40px
+      border-radius 20px
+      h2
+        font-size 2em
   #about
     width 100%
+    padding-top 140px
+  #rides
+    padding-top 140px
   .my-route
     width 250px !important
     margin 5px
@@ -345,11 +386,12 @@ footer
     font-size 3em
   h1
     left 110px
-    text-shadow 4px 3px 1px #000
   #brand-message
     left 170px
   .fb-comment-wrapper
     width 600px
+  #ridelist-col
+    margin-left 0
   .navbar
     height 48.4px
     .big-nav
@@ -360,15 +402,11 @@ footer
         font-size 1.75em
         line-height 1.25em
     .big-nav:nth-child(2n)
-      a
-        font-style italic
+      float right
     .big-nav:nth-child(3n)
       float right
     .big-nav:nth-child(4n)
       float right
-    .big-nav:nth-child(4n)
-      a
-        font-style normal
     .big-nav:nth-child(5n)
       float right
     .hamburger

@@ -45,9 +45,9 @@ h1 {
   font-weight: 700;
   line-height: 76px;
   position: absolute;
-  top: 100px;
   color: #fff;
-  font-size: 70px;
+  font-size: 91px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
 }
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -97,13 +97,20 @@ footer {
   color: #fff;
 }
 footer .footcontain {
-  display: inline-block;
   font-size: 14px;
-  text-align: center;
   padding: 10px;
+  margin: 0 auto;
 }
 footer .copyright {
   color: #fff;
+  margin: 0 auto;
+}
+footer .footterms {
+  text-align: center;
+  margin: 0 auto;
+}
+footer div {
+  text-align: center;
 }
 /*=====End Tag-Wide=====*/
 /*=====Start Nav=====*/
@@ -144,9 +151,9 @@ footer .copyright {
 .navbar ul li ul {
   display: none;
   position: absolute;
-  top: 99%;
+  top: 100%;
   left: 1px;
-  width: 100%;
+  width: 101%;
   background: #528130;
 }
 .navbar ul li ul li {
@@ -205,10 +212,8 @@ footer .copyright {
   background-position-y: 90%;
   background-size: 200%;
 }
-#home .main-title {
-  font-family: "Oswald", cursive;
-  font-weight: 700;
-  color: #e1b596;
+#home h1 {
+  top: 30px;
 }
 #home #brand-message {
   font-family: 'Lato', sans-serif;
@@ -217,7 +222,31 @@ footer .copyright {
   color: #fff;
   font-style: italic;
   position: absolute;
-  top: 170px;
+  top: 100px;
+  left: 80px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+#home a {
+  display: inline-block;
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  padding: 5px 10px 0 10px;
+  border-radius: 10px;
+  background-color: #75ad4c;
+  box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+#home a h2 {
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.5em;
+  font-style: none;
+  font-weight: normal;
+}
+#home a:hover {
+  background-color: #629140;
 }
 /*=====End Home=====*/
 /*=====Start About=====*/
@@ -272,6 +301,9 @@ footer .copyright {
 }
 #search-form {
   text-align: center;
+}
+#ridelist-col {
+  margin-left: 15px;
 }
 .my-route {
   width: 250px !important;
@@ -354,6 +386,7 @@ footer .copyright {
 /*=====Start Contact=====*/
 #contact {
   width: 100%;
+  margin: 0;
 }
 #contact input,
 #contact textarea {
@@ -407,8 +440,27 @@ footer .copyright {
     height: 100%;
     background-position-y: 85%;
   }
+  #home h1 {
+    top: 100px;
+  }
+  #home #brand-message {
+    top: 170px;
+  }
+  #home a {
+    top: 260px;
+    left: 260px;
+    padding: 20px 40px 10px 40px;
+    border-radius: 20px;
+  }
+  #home a h2 {
+    font-size: 2em;
+  }
   #about {
     width: 100%;
+    padding-top: 140px;
+  }
+  #rides {
+    padding-top: 140px;
   }
   .my-route {
     width: 250px !important;
@@ -430,13 +482,15 @@ footer .copyright {
   }
   h1 {
     left: 110px;
-    text-shadow: 4px 3px 1px #000;
   }
   #brand-message {
     left: 170px;
   }
   .fb-comment-wrapper {
     width: 600px;
+  }
+  #ridelist-col {
+    margin-left: 0;
   }
   .navbar {
     height: 48.4px;
@@ -450,17 +504,14 @@ footer .copyright {
     font-size: 1.75em;
     line-height: 1.25em;
   }
-  .navbar .big-nav:nth-child(2n) a {
-    font-style: italic;
+  .navbar .big-nav:nth-child(2n) {
+    float: right;
   }
   .navbar .big-nav:nth-child(3n) {
     float: right;
   }
   .navbar .big-nav:nth-child(4n) {
     float: right;
-  }
-  .navbar .big-nav:nth-child(4n) a {
-    font-style: normal;
   }
   .navbar .big-nav:nth-child(5n) {
     float: right;
