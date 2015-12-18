@@ -50,7 +50,7 @@ function userLogged() {
         memIcon = document.createElement("img"),
         memText = document.createElement("p");
 
-    memWrap.style.display="inline-block";
+    memWrap.style.visibility="visible";
     memIcon.setAttribute("src", "img/memicon64.png");
 
     memText.innerText = "Keep an eye out for this icon to find deals from local businesses.";
